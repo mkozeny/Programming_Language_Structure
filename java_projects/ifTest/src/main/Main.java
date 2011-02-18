@@ -1,0 +1,18 @@
+package main;
+
+public class Main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		int x=2;
+		if(x<1)
+			if(x<1)
+				x=2;
+		else
+			x=2;
+
+	}
+
+}

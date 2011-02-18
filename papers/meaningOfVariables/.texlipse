@@ -1,0 +1,13 @@
+#TeXlipse project settings
+#Tue Feb 15 14:35:31 CST 2011
+builderNum=2
+outputDir=
+makeIndSty=
+bibrefDir=
+outputFormat=pdf
+tempDir=tmp
+mainTexFile=meaning_of_variables.tex
+outputFile=meaning_of_variables.pdf
+langSpell=en
+markDer=true
+srcDir=

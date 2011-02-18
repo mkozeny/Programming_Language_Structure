@@ -1,0 +1,38 @@
+package var;
+
+import java.lang.System.out;
+
+public class Variable {
+
+	/**
+	 * @param args
+	 */
+	/*declare and initialize instance variable*/
+	public int instanceVariable=12;
+	
+	/*declare and initialize class variable*/
+	public static int classVariable=13;
+	
+	public static void main(String[] args) {
+		out.println("Class variable: " 
+                + classVariable);
+
+		/*Instantiate object to access instance variable and method.*/
+		Variable var = new Variable();
+		out.println("Instance variable: " 
+		         + var.instanceVariable);
+		/*method call*/
+		obj.myMethod(14);
+		
+		/*declare and intitialize a local variable*/
+		int localVariable = 15; 
+		out.println("Local variable: " 
+		                + localVariable);
+
+	}
+	public void method(int methodParameter)
+	{
+		out.println("Method parameter: " 
+                + methodParameter);
+	}
+}

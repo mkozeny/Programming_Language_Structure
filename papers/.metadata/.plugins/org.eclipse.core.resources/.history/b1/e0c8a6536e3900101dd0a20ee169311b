@@ -1,0 +1,53 @@
+package var;
+
+import java.lang.System.out;
+
+public class Variable {
+
+	/**
+	 * @param args
+	 */
+	/*declare and initialize instance variable*/
+	public int instanceVariable=12;
+	
+	/*declare and initialize class variable*/
+	public static int classVariable=13;
+	
+	public static void main(String[] args) {
+		out.println("Class variable: " 
+                + classVariable);
+
+		/*Instantiate object to access instance variable and method.*/
+		Variable var1 = new Variable();
+		out.println("Instance variable: " 
+		         + var1.instanceVariable);
+		/*method call*/
+		var1.myMethod(14);
+		
+		/*you can see that class variable is still same*/
+		Variable var2 = new Variable();
+		out.println("Var1 class variable: " 
+                + var1.classVariable);
+		out.println("Var2 class variable: " 
+                + var2.classVariable);
+
+		/*if one of the object change class variable
+		 * this change is also reflected in other objects because class variable is 'object independent'*/
+		var2.classvriable=16;
+		out.println("Var1 class variable: " 
+                + var1.classVariable);
+		out.println("Var2 class variable: " 
+                + var2.classVariable);
+		
+		/*declare and intitialize a local variable*/
+		int localVariable = 15; 
+		out.println("Local variable: " 
+		                + localVariable);
+
+	}
+	public void method(int methodParameter)
+	{
+		out.println("Method parameter: " 
+                + methodParameter);
+	}
+}

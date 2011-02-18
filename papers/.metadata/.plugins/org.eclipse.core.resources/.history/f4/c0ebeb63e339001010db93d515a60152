@@ -1,0 +1,193 @@
+\title{Structure of IF clause in Java and meaning of variables in Java and
+Haskell} \author{
+        Martin Kozeny\\
+        CSCI 4501: Programming Language Structure\\
+        Spring 2011
+        University of New Orleans
+}
+\date{\today}
+
+
+
+
+\documentclass[5pt]{article}
+\usepackage{graphicx}
+\usepackage{listings}
+  \usepackage{courier}
+ 
+ \lstset{language=Java,
+         basicstyle=\footnotesize\ttfamily, % Standardschrift
+         %numbers=left,               % Ort der Zeilennummern
+         numberstyle=\tiny,          % Stil der Zeilennummern
+         %stepnumber=2,               % Abstand zwischen den Zeilennummern
+         numbersep=5pt,              % Abstand der Nummern zum Text
+         tabsize=2,                  % Groesse von Tabs
+         extendedchars=true,         %
+         breaklines=true,            % Zeilen werden Umgebrochen
+         keywordstyle=\color{blue},
+         %       frame=b,         
+         keywordstyle=[1]\textbf,    % Stil der Keywords
+         keywordstyle=[2]\color{blue},    %
+ %        keywordstyle=[3]\textbf,    %
+ %        keywordstyle=[4]\textbf,   \sqrt{\sqrt{}} %
+         %stringstyle=\color{white}\ttfamily, % Farbe der String
+         showspaces=false,           % Leerzeichen anzeigen ?
+         showtabs=false,             % Tabs anzeigen ?
+         xleftmargin=17pt,
+         framexleftmargin=17pt,
+         framexrightmargin=5pt,
+         framexbottommargin=4pt,
+         %backgroundcolor=\color{lightgray},
+         showstringspaces=false      % Leerzeichen in Strings anzeigen ?        
+ }
+ \lstloadlanguages{% Check Dokumentation for further languages ...
+         %[Visual]Basic
+         %Pascal
+         %C
+         %C++
+         %XML
+         %HTML
+         %Lisp
+         Java
+ }
+
+
+\setlength{\hoffset}{-2.3cm} 
+\setlength{\voffset}{-3cm}
+\setlength{\textheight}{24.0cm} 
+\setlength{\textwidth}{16cm}
+
+
+\begin{document}
+
+
+\maketitle
+
+\section{Structure of IF clause}
+
+The main question is, to which \verb|if| is connected the only one \verb|else|
+in the piece of code shown below.
+\newline
+\newline
+\lstinputlisting[language=Java]{src/Main.java}
+
+\paragraph{}
+According to this part of Java Language Specification in BNF,
+\begin{verbatim}
+...
+Statement:
+        Block
+        assert Expression [ : Expression] ;
+     if ParExpression Statement [else Statement]
+     for ( ForControl ) Statement
+     while ParExpression Statement
+     do Statement while ParExpression   ;
+     try Block ( Catches | [Catches] finally Block )
+     switch ParExpression { SwitchBlockStatementGroups }
+     synchronized ParExpression Block
+     return [Expression] ;
+     throw Expression   ;
+     break [Identifier]
+     continue [Identifier]
+        ;
+        StatementExpression ;
+        Identifier   :   Statement
+...
+\end{verbatim}
+we can see, how is the \verb|if| statement implemented. In this rule labeled as
+\verb|Statement|, after terminal symbol \verb|if| comes nonterminal symbol
+\verb|ParExpression| and then comes again nonterminal symbol \verb|Statement|
+followed by \verb|[else Statement]|. Following nonterminal symbol
+\verb|ParExpression| in Java Language Specification, we can see that this symbol
+is evaluated as boolean expression in \verb|if| condition and after that is
+recursively called nonterminal \verb|Statement|. In presented source code,
+nonterminal statement is replaced again by \verb|if| clause and BNF shows, that
+after \verb|if| clause can be zero or one occurrences of \verb|else Statement|
+clause (\verb|[else Statement]|). According to this rule, \verb|else| clause is
+paired with nearest \verb|if| statement so in source code shown above, \verb|else| is paired with
+\verb|if(be2)| statement. I have verified that also via debugging in Eclipse.
+
+
+\section{Meaning of variables in Java}
+In Java, we have this kinds of variables according to their scope:
+\begin{itemize}
+  \item member variable which could be class or instance variable
+  \item local variable
+  \item method parameter
+  \item exception handler parameter 
+\end{itemize}
+
+\paragraph{Member variable}
+
+A member variable is a member of a class (class variable) or a member of an object instantiated from that class (instance variable). It must be declared within a class, but not within the body of a method of the class.
+Member variables can also be initialized when they are declared. There is a
+difference between instance and class variable. Class member is declared with
+static modifier. The main difference between the class variable and  Instance
+variable is that the first time, when class  is loaded in to memory, then only
+memory is allocated for all class variables. That means, class variables not depends on the Objets of that classes. Whatever number of objects are there, only one copy is created at the time of class loding.
+The main advantage of this class variable is, suppose if we want to maintain a counter to count the no of object of type that class, in that case we use variable counter as the static variable. 
+\paragraph{Local variable}
+
+A local variable is a variable declared within the body of a method or within a block of code contained within the body of a method.
+Local variables are declared inside the body of the methods or within a block of
+code (=code enclosed with brackets) contained within the body of a method. The
+scope of a local variable extends from the point at which it is declared to the end of the block of code in which it is declared. 
+
+\paragraph{Method parameters}
+
+Method parameters are the formal arguments of a method. (A method is a function defined inside of a class.) Method parameters are used to pass values into and out of methods. The scope of a method parameter is the entire method for which it is a parameter.
+Method parameters are initialized by the values
+passed to the method or exception handler by the calling program.
+\paragraph{Exception handler parameters}
+
+Exception handler parameters are arguments to exception handlers. The exception handling mechanism for Java is considerably different from that for C++.
+Exception handler parameters are initialized by the values
+passed to the method or exception handler by the calling program.
+\newpage
+Source code below is short example of using variables in Java.
+\lstinputlisting[language=Java]{src/Variables.java}
+\newpage
+And here is the output of the code above:\\
+\newline
+Class variable: 13\\
+Instance variable: 12\\
+Method parameter: 14\\
+Var1 class variable: 13\\
+Var2 class variable: 13\\
+Var1 class variable: 16\\
+Var2 class variable: 16\\
+Var1 instance variable: 12\\
+Var2 instance variable: 17\\
+Local variable: 15\\
+
+\section{Meaning of variables in Haskell}
+Haskell has variables which does not hold the value and cannot be modified -
+Haskell has \textbf{immutable variables} or we can say it is
+\textbf{single-assignment language} - it does not allow the reassignment of
+variables within a scope. For this fact some people say that Haskell does not
+have any variables but \textbf{definitions}, because variables is a
+binding of a name to a value that varies over a range. In general in Haskell
+everything is a function. Even if it looks like a 'variable', it is just a
+nullary function taking no arguments. Assigning some variable does not mean that
+the variable is calculated. If this value is never needed it will be never
+calculated, beacause Haskell uses \textbf{lazy initialization}. 'Variable' in
+Haskell is a name for some valid expression. The scope of such variables can be
+controlled by using \textbf{let} or \textbf{where} clauses. \textbf{Where}
+bindings are a syntactic construct that let you bind to variables at the end of
+a function and the whole function can see them, including all the guards.
+\textbf{Let} bindings let you bind to variables anywhere and are expressions
+themselves, but are very local, so they do not span across guards.
+
+Haskell has also so called \textbf{type variables}. Type variables nothing similar
+with variables which we know from Java, C++, \ldots. These variables are used for
+defining functions and they can be of any type. It allows us to easily write
+very general functions, also called as \textbf{polymorphic functions}.
+
+In conclusion, we can say that there are no 'real variables' in Haskell. Some
+examples of using so called variables are shown below.
+\newline
+\newline
+ 
+\lstinputlisting[language=Haskell]{src/Variables.hs}
+
+\end{document}

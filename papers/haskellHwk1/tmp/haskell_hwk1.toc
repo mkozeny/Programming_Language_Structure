@@ -1,0 +1,8 @@
+\contentsline {paragraph}{Programmer training - 4/10}{3}
+\contentsline {paragraph}{Program writing (program development) - 6/10}{3}
+\contentsline {paragraph}{Program translation (compilation, interpretation) - 7/10}{3}
+\contentsline {paragraph}{Program execution - 6/10}{3}
+\contentsline {paragraph}{Language implementation system - 10/10}{3}
+\contentsline {paragraph}{Program Reliability - 8/10}{3}
+\contentsline {paragraph}{Program safety and Security - 9/10}{4}
+\contentsline {paragraph}{Program maintenance - 8/10}{4}

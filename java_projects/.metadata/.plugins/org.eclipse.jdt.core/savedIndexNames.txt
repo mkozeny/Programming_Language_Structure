@@ -1,0 +1,11 @@
+INDEX VERSION 1.126+/home/kozenym/Desktop/UNO/school/Programming_Language_Structure/git/java_projects/.metadata/.plugins/org.eclipse.jdt.core
+837158796.index
+47599848.index
+1820894104.index
+274907012.index
+3955261179.index
+2370678678.index
+2587115027.index
+3865754283.index
+1594113350.index
+3289990234.index

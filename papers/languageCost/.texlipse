@@ -1,0 +1,13 @@
+#TeXlipse project settings
+#Mon Feb 07 20:45:15 CST 2011
+builderNum=2
+outputDir=
+makeIndSty=
+bibrefDir=
+outputFormat=pdf
+tempDir=tmp
+mainTexFile=language_cost.tex
+outputFile=language_cost.pdf
+langSpell=en
+markDer=true
+srcDir=
