@@ -1,0 +1,13 @@
+#ifndef TUPLE_H_
+#define TUPLE_H_
+
+#endif /*TUPLE_H_*/
+
+struct TUPLE {
+ char* numbers;
+ char* characters;
+};
+
+void addNumber(struct TUPLE *tuple, int num);
+void addCharacter(struct TUPLE *tuple, char c);
+void printTuple(struct TUPLE *tuple);

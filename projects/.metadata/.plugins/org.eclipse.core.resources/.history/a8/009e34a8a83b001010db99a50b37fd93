@@ -1,0 +1,8 @@
+#ifndef FUNCTIONS_H_
+#define FUNCTIONS_H_
+
+#endif /*FUNCTIONS_H_*/
+
+int sum_square(int n);
+int** is_pyth(int n);
+int test_pyth(int a, int b, int c);

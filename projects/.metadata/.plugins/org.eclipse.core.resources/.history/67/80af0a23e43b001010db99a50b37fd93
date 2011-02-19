@@ -1,0 +1,13 @@
+#ifndef FUNCTIONS_H_
+#define FUNCTIONS_H_
+
+#endif /*FUNCTIONS_H_*/
+
+int sum_square(int n);
+void is_pyth(int n, struct NODE *llist);
+int test_pyth(int a, int b, int c);
+void perfectInt(int n, struct NODE *llist);
+void divisors(int n, struct NODE *llist1);
+void splitString(char* s, struct TUPLE *tuple);
+int* merge_sort(int* list, int length);
+int* merge(int* left, int* right, int lengthLeft, int lengthRight);

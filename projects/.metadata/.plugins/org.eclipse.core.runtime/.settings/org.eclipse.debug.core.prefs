@@ -1,0 +1,3 @@
+#Fri Feb 18 22:16:25 CST 2011
+prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<watchExpressions>\n<expression enabled\="true" text\="list[5]"/>\n<expression enabled\="true" text\="sizeof(list)"/>\n</watchExpressions>\n
+eclipse.preferences.version=1

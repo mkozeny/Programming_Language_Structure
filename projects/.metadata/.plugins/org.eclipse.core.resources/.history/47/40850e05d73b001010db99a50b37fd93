@@ -1,0 +1,8 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+#include "headers/tuple.h"
+
+void addNumber(struct TUPLE *tuple, int num);
+void addCharacter(struct TUPLE *tuple, char c);
+void printTuple(struct TUPLE *tuple);

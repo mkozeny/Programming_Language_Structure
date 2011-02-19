@@ -1,0 +1,16 @@
+int sum_square(int n);
+
+int main()
+{
+	printf ("1. Triangle area, where base is 5 and height is 3, is %i\r\n",sum_square(10));
+	return 0;
+}
+
+int sum_square(int n)
+{
+	int i;
+	int sum;
+	for(i = 1; i <= n; i++)
+		sum+=i*i;
+	return sum;
+}

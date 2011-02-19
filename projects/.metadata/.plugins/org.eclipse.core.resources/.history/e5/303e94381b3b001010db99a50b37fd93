@@ -1,0 +1,15 @@
+int sum_square(int n);
+
+int main()
+{
+	return 0;
+}
+
+int sum_square(int n)
+{
+	int i;
+	int sum;
+	for(i = 1; i <= n; i++)
+		sum+=i*i;
+	return sum;
+}

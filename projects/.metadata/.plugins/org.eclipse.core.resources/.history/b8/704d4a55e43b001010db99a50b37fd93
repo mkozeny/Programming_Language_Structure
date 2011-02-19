@@ -1,0 +1,258 @@
+#include <stdio.h>
+#include <string.h>
+#include "headers/node.h"
+#include "headers/tuple.h"
+#include "headers/functions.h"
+
+
+
+int main()
+{
+	printf ("1. is %i\r\n",sum_square(5));
+	
+	struct NODE *llist;
+	llist = (struct NODE *)malloc(sizeof(struct NODE));
+	is_pyth(10,llist);
+	printf ("2. is\r\n");
+	display_list_array(llist, 3);
+	
+	struct NODE *llist1;
+	llist1 = (struct NODE *)malloc(sizeof(struct NODE));
+	perfectInt(10000 ,llist1);
+	//divisors(30, llist1);
+	printf ("3. is\r\n");
+	display_list(llist1);
+	
+	
+	struct TUPLE * tuple;
+	tuple = (struct TUPLE *)malloc(sizeof(struct TUPLE));
+	char * str ="Value#1 value#2 35 !";
+	init_tuple(tuple,str);
+	splitString(str, tuple);
+	printf ("4. is\r\n");
+	print_tuple(tuple);
+	
+	int length = 10;
+	int * list = malloc(length*sizeof(int));
+	list[0]=2;
+	list[1]=12;
+	list[2]=213;
+	list[3]=45;
+	list[4]=786;
+	list[5]=221;
+	list[6]=13;
+	list[7]=56;
+	list[8]=67;
+	list[9]=64;
+	array_output(list);
+	int * sorted_list = merge_sort(list, length);
+	array_output(sorted_list);
+	/*char str[] ="- This, a sample string.";
+	  char * pch;
+	  printf ("Splitting string \"%s\" into tokens:\n",str);
+	  pch = strtok (str,"");
+	  while (pch != NULL)
+	  {
+	    printf ("%s\n",pch);
+	    pch = strtok (NULL, "");
+	  }*/
+
+	/*printf ("2. is %i %i %i\r\n",result[0][0],result[0][1],result[0][2]);
+	
+	result[3] = malloc(3 * sizeof(int));
+	result[3][0] = 3;
+	result[3][1] = 3;
+	result[3][2] = 3;
+	int j = sizeof(**result);
+	int k = sizeof(result[0]);
+	printf ("3. is %i %i \r\n",j, k);
+	int i;
+	for(i = 0; i < 5; i++)
+			free(result[i]);
+	free(result);*/
+	return 0;
+}
+
+int sum_square(int n)
+{
+	int i;
+	int sum = 0;
+	for(i = 1; i <= n; i++)
+		sum+=i*i;
+	return sum;
+}
+void is_pyth(int n, struct NODE *llist)
+{
+	int* result;
+	int c;
+	int a;
+	int b;
+	for(c = 1; c <= n ; c++)
+	{
+		for(a = 1; a < c ; a++)
+		{
+			for(b = 1; b < c ; b++)
+			{
+				if(test_pyth(a, b ,c))
+				{
+					result = malloc(3 * sizeof(int));
+					result[0] = a;
+					result[1] = b;
+					result[2] = c;
+					append_node_array(llist, result);
+				}
+			}	
+		}
+	}
+}
+/*int** is_pyth(int n)
+{
+	int** result = malloc(5*sizeof(int*));
+	int c;
+	int a;
+	int b;
+	int i = 0;
+	for(c = 1; c <= n ; c++)
+	{
+		for(a = 1; a < c ; a++)
+		{
+			for(b = 1; b < c ; b++)
+			{
+				if(test_pyth(a, b ,c))
+				{
+					result[i] = malloc(3 * sizeof(int));
+					result[i][0] = a;
+					result[i][1] = b;
+					result[i][2] = c;
+					i++;
+				}
+			}	
+		}
+	}
+	return result;
+}*/
+
+int test_pyth(int a, int b, int c)
+{
+	if(a*a + b*b == c*c)
+		return 1;
+	else
+		return 0;
+}
+void perfectInt(int n,struct NODE *llist)
+{
+	struct NODE * llist1;
+	int i;
+	//int suma = 0;
+	llist1 = (struct NODE *)malloc(sizeof(struct NODE));
+	for( i = 1; i <= n; i++)
+	{
+		divisors(i, llist1);
+		//suma = sum(llist1);
+		if(sum(llist1)==i)
+		{
+			append_node(llist, i);
+		}
+		llist1 = (struct NODE *)malloc(sizeof(struct NODE));
+	}
+}
+
+void divisors(int n, struct NODE *llist1)
+{
+	int i;
+	for(i = 1; i < n; i++)
+	{
+		if((n % i) == 0)
+			append_node(llist1, i);
+	}
+}
+
+void splitString(char* s, struct TUPLE *tuple)
+{
+	int i;
+	//struct TUPLE *tuple = (struct TUPLE *)malloc(sizeof(struct TUPLE));
+	int length = strlen(s);
+	for(i = 0; i< length; i++)
+	{
+		if(s[i]>=48 && s[i]<=57)
+			add_number_to_tuple(tuple, s[i]);
+		else
+			add_character_to_tuple(tuple,s[i]);
+	}
+}
+int* merge_sort(int* list, int length)
+{
+	if(length <= 1)
+	    return list;
+	int * left;
+	int * right;
+	int * result;
+	int middle = length / 2;
+	left = malloc(middle*sizeof(int));
+	right = malloc((length-middle)*sizeof(int));
+	result = malloc(length*sizeof(int));
+	int i;
+	for(i = 0; i < middle; i++)
+		left[i] = list[i];
+	for(i = middle; i < length; i++)
+		right[i-middle] = list[i];
+	
+	left = merge_sort(left, middle);
+	right = merge_sort(right, (length -middle));
+	result = merge(left, right, middle, (length -middle));
+	return result;
+
+	/*int x=6;
+	int array[x];
+	array[0]=1;
+	array[1]=4;*/
+	/*int len=sizeof(list)/sizeof(int);
+			printf("len %i",len);*/
+}
+
+int* merge(int* left, int* right, int lengthLeft, int lengthRight)
+{
+	int* result = malloc((lengthLeft+lengthRight)*sizeof(int));
+	int resultPointer=0;
+	int leftPointer=0;
+	int rightPointer=0;
+	while(lengthLeft > leftPointer || lengthRight > rightPointer)
+	{
+	     if(lengthLeft > leftPointer && lengthRight > rightPointer)
+	     {
+	          if(left[leftPointer] <= right[rightPointer])
+	          {
+	              result[resultPointer] = left[leftPointer];
+	              resultPointer++;
+	              leftPointer++;
+	          }
+	          else
+	          {
+	        	  result[resultPointer] = right[rightPointer];
+	        	  resultPointer++;
+	        	  rightPointer++;
+	          }
+	     }
+	     else if (lengthLeft > leftPointer)
+	     {
+	    	 result[resultPointer] = left[leftPointer];
+	    	 resultPointer++;
+	    	 leftPointer++;
+	     }
+	     else if (lengthRight > rightPointer)
+	     {
+	    	 result[resultPointer] = right[rightPointer];
+	    	 resultPointer++;
+	    	 rightPointer++;
+	     }
+	}
+	return result;
+
+}
+void array_output(int* list, int length)
+{
+	int i;
+	for(i = 0; i < length; i++)
+		printf("%i ",list[i]);
+	printf("\r\n");
+}

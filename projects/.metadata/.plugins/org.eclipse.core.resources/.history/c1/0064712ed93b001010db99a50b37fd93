@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#include "headers/tuple.h"
+
+void add_number_to_tuple(struct TUPLE *tuple, char num)
+{
+	tuple->numbers[strlen(tuple->numbers)] = num;
+}
+void add_character_to_tuple(struct TUPLE *tuple, char c)
+{
+	tuple->characters[strlen(tuple->characters)] = c;
+}
+void print_tuple(struct TUPLE *tuple)
+{
+	printf ("(\"%s\",\"%s\")",tuple->numbers,tuple->characters);
+}
