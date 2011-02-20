@@ -34,42 +34,46 @@
 <part id="2"/>
 <part id="3"/>
 <part id="4"/>
+<part id="5"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="functions.c" partName="functions.c" path="/home/kozenym/Desktop/UNO/school/Programming_Language_Structure/git/projects/Functions/functions.c" title="functions.c" tooltip="Functions/functions.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Functions/functions.c"/>
-<editorState selectionHPixel="0" selectionLength="0" selectionOffset="718"/>
+<editor focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="functions.c" partName="functions.c" path="/home/kozenym/Desktop/UNO/school/Programming_Language_Structure/git/projects/Hwk2/functions.c" title="functions.c" tooltip="Hwk2/functions.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hwk2/functions.c"/>
+<editorState selectionHPixel="0" selectionLength="0" selectionOffset="4620"/>
 </editor>
-<editor id="org.eclipse.cdt.make.editor" name="objects.mk" partName="objects.mk" path="/home/kozenym/Desktop/UNO/school/Programming_Language_Structure/projects/Functions/Debug/objects.mk" title="objects.mk" tooltip="Functions/Debug/objects.mk" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Functions/Debug/objects.mk"/>
-<editorState selectionHPixel="0" selectionLength="0" selectionOffset="0"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="node.c" partName="node.c" path="/home/kozenym/Desktop/UNO/school/Programming_Language_Structure/git/projects/Hwk2/node.c" title="node.c" tooltip="Hwk2/node.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hwk2/node.c"/>
+<editorState selectionHPixel="0" selectionLength="0" selectionOffset="66"/>
 </editor>
-<editor id="org.eclipse.cdt.make.editor" name="sources.mk" partName="sources.mk" path="/home/kozenym/Desktop/UNO/school/Programming_Language_Structure/projects/Functions/Debug/sources.mk" title="sources.mk" tooltip="Functions/Debug/sources.mk" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Functions/Debug/sources.mk"/>
-<editorState selectionHPixel="0" selectionLength="0" selectionOffset="0"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="tuple.c" partName="tuple.c" path="/home/kozenym/Desktop/UNO/school/Programming_Language_Structure/git/projects/Hwk2/tuple.c" title="tuple.c" tooltip="Hwk2/tuple.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hwk2/tuple.c"/>
+<editorState selectionHPixel="0" selectionLength="0" selectionOffset="703"/>
 </editor>
-<editor id="org.eclipse.cdt.make.editor" name="subdir.mk" partName="subdir.mk" path="/home/kozenym/Desktop/UNO/school/Programming_Language_Structure/projects/Functions/Debug/subdir.mk" title="subdir.mk" tooltip="Functions/Debug/subdir.mk" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Functions/Debug/subdir.mk"/>
-<editorState selectionHPixel="0" selectionLength="0" selectionOffset="0"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="node.h" partName="node.h" path="/home/kozenym/Desktop/UNO/school/Programming_Language_Structure/git/projects/Hwk2/headers/node.h" title="node.h" tooltip="Hwk2/headers/node.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hwk2/headers/node.h"/>
+<editorState selectionHPixel="0" selectionLength="27" selectionOffset="134"/>
 </editor>
-<editor id="org.eclipse.cdt.make.editor" name="makefile" partName="makefile" path="/home/kozenym/Desktop/UNO/school/Programming_Language_Structure/projects/Functions/Debug/makefile" title="makefile" tooltip="Functions/Debug/makefile" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Functions/Debug/makefile"/>
-<editorState selectionHPixel="0" selectionLength="0" selectionOffset="0"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="tuple.h" partName="tuple.h" path="/home/kozenym/Desktop/UNO/school/Programming_Language_Structure/git/projects/Hwk2/headers/tuple.h" title="tuple.h" tooltip="Hwk2/headers/tuple.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hwk2/headers/tuple.h"/>
+<editorState selectionHPixel="0" selectionLength="0" selectionOffset="203"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="functions.h" partName="functions.h" path="/home/kozenym/Desktop/UNO/school/Programming_Language_Structure/git/projects/Hwk2/headers/functions.h" title="functions.h" tooltip="Hwk2/headers/functions.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hwk2/headers/functions.h"/>
+<editorState selectionHPixel="0" selectionLength="0" selectionOffset="444"/>
 </editor>
 </editors>
 <views>
-<view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
-<viewState CommonNavigator.LINKING_ENABLED="0" CommonNavigator.LINKING_ENABLED.delayed="0" org.eclipse.cdt.ui.cview.groupincludes="false" org.eclipse.cdt.ui.editor.CUChildren="true" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
-</view>
 <view id="org.eclipse.cdt.ui.CView" partName="C/C++ Projects">
 <viewState horizontalPosition="0" verticalPosition="0">
 <expanded>
-<element path="/home/kozenym/Desktop/UNO/school/Programming_Language_Structure/git/projects/Functions"/>
+<element path="/home/kozenym/Desktop/UNO/school/Programming_Language_Structure/git/projects/Hwk1"/>
+<element path="/home/kozenym/Desktop/UNO/school/Programming_Language_Structure/git/projects/Hwk2"/>
+<element path="/home/kozenym/Desktop/UNO/school/Programming_Language_Structure/git/projects/Hwk2/headers"/>
 </expanded>
 <selection>
-<element path="/home/kozenym/Desktop/UNO/school/Programming_Language_Structure/git/projects/Functions"/>
+<element path="/home/kozenym/Desktop/UNO/school/Programming_Language_Structure/git/projects/Hwk2"/>
 </selection>
 <customFilters userDefinedPatternsEnabled="false">
 <xmlDefinedFilters>
@@ -85,31 +89,7 @@
 </customFilters>
 </viewState>
 </view>
-<view id="org.eclipse.ui.views.PropertySheet" partName="Properties">
-<viewState/>
-</view>
-<view id="org.eclipse.cdt.make.ui.views.MakeView" partName="Make Targets"/>
-<view id="org.eclipse.ui.views.ProblemView" partName="Problems">
-<viewState columnWidth0="250" columnWidth1="75" columnWidth2="150" columnWidth3="60" columnWidth4="0" horizontalPosition="0" verticalPosition="0">
-<columnOrder columnOrderIndex="0"/>
-<columnOrder columnOrderIndex="1"/>
-<columnOrder columnOrderIndex="2"/>
-<columnOrder columnOrderIndex="3"/>
-<columnOrder columnOrderIndex="4"/>
-</viewState>
-</view>
 <view id="org.eclipse.debug.ui.DebugView" partName="Debug">
-<viewState/>
-</view>
-<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
-<viewState/>
-</view>
-<view id="org.eclipse.debug.ui.BreakpointView" partName="Breakpoints">
-<viewState>
-<isTrackingSelection value="false"/>
-</viewState>
-</view>
-<view id="org.eclipse.debug.ui.VariableView" partName="Variables">
 <viewState/>
 </view>
 <view id="org.eclipse.ui.views.TaskList" partName="Tasks">
@@ -123,11 +103,41 @@
 <columnOrder columnOrderIndex="6"/>
 </viewState>
 </view>
+<view id="org.eclipse.debug.ui.VariableView" partName="Variables">
+<viewState/>
+</view>
+<view id="org.eclipse.debug.ui.BreakpointView" partName="Breakpoints">
+<viewState>
+<isTrackingSelection value="false"/>
+</viewState>
+</view>
 <view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
 <viewState/>
 </view>
+<view id="org.eclipse.debug.ui.ExpressionView" partName="Expressions">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
+<viewState CommonNavigator.LINKING_ENABLED="0" CommonNavigator.LINKING_ENABLED.delayed="0" org.eclipse.cdt.ui.cview.groupincludes="false" org.eclipse.cdt.ui.editor.CUChildren="true" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
+</view>
+<view id="org.eclipse.ui.views.PropertySheet" partName="Properties">
+<viewState/>
+</view>
+<view id="org.eclipse.cdt.make.ui.views.MakeView" partName="Make Targets"/>
+<view id="org.eclipse.ui.views.ProblemView" partName="Problems">
+<viewState columnWidth0="250" columnWidth1="75" columnWidth2="150" columnWidth3="936" columnWidth4="0" horizontalPosition="0" verticalPosition="0">
+<columnOrder columnOrderIndex="0"/>
+<columnOrder columnOrderIndex="1"/>
+<columnOrder columnOrderIndex="2"/>
+<columnOrder columnOrderIndex="3"/>
+<columnOrder columnOrderIndex="4"/>
+</viewState>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
+</view>
 </views>
-<perspectives activePart="org.eclipse.cdt.ui.editor.CEditor" activePerspective="org.eclipse.cdt.ui.CPerspective">
+<perspectives activePart="org.eclipse.ui.console.ConsoleView" activePerspective="org.eclipse.cdt.ui.CPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.cdt.internal.ui.CPerspectiveFactory" id="org.eclipse.cdt.ui.CPerspective" label="C/C++"/>
 <alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
@@ -273,46 +283,64 @@
 <view id="org.eclipse.debug.ui.DebugView"/>
 <view id="org.eclipse.debug.ui.VariableView"/>
 <view id="org.eclipse.debug.ui.BreakpointView"/>
+<view id="org.eclipse.debug.ui.ExpressionView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <fastViewBars/>
-<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
+<layout>
+<mainWindow>
+<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">
+<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.7495049" ratioLeft="757" ratioRight="253" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.7495049" ratioLeft="757" ratioRight="253" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.7488" ratioLeft="468" ratioRight="157" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.7488" ratioLeft="468" ratioRight="157" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
 <page content="org.eclipse.debug.ui.MemoryView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">
+<part id="0"/>
 <part id="1"/>
 <part id="2"/>
 </presentation>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.44871795" ratioLeft="210" ratioRight="258" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
-<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.7495049" ratioLeft="757" ratioRight="253" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.7495049" ratioLeft="757" ratioRight="253" relationship="2" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.cdt.debug.ui.DisassemblyView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">
+<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="505" ratioRight="505" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="505" ratioRight="505" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.debug.ui.ExpressionView" appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
 <page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
-<page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
+<page content="org.eclipse.debug.ui.ExpressionView" label="Expressions"/>
 <page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
 <page content="org.eclipse.cdt.debug.ui.SignalsView" label="LabelNotFound"/>
 <page content="org.eclipse.cdt.debug.ui.ModulesView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">
+<part id="0"/>
 <part id="1"/>
+<part id="2"/>
 </presentation>
 </folder>
 </info>
@@ -323,159 +351,162 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Functions/functions.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.make.editor" path="/Functions/Debug/makefile"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.make.editor" path="/Functions/Debug/objects.mk"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Hwk2/functions.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Hwk2/tuple.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Hwk2/headers/functions.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Hwk2/node.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Hwk2/headers/node.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Hwk2/headers/tuple.h"/>
 </editors>
-<item historyLabel="makefile" index="1">
-<position/>
-</item>
-<item historyLabel="objects.mk" index="2">
-<position/>
+<item historyLabel="functions.h" index="2">
+<position info="not_deleted" x="340" y="0"/>
 </item>
 <item historyLabel="functions.c" index="0">
-<position info="not_deleted" x="1874" y="0"/>
-</item>
-<item historyLabel="makefile" index="1">
-<position/>
+<position info="not_deleted" x="6399" y="0"/>
 </item>
 <item historyLabel="functions.c" index="0">
-<position info="not_deleted" x="1874" y="0"/>
+<position info="not_deleted" x="6416" y="0"/>
 </item>
-<item historyLabel="makefile" index="1">
+<item historyLabel="functions.c" index="0">
 <position/>
 </item>
 <item historyLabel="functions.c" index="0">
-<position info="not_deleted" x="303" y="0"/>
+<position/>
+</item>
+<item historyLabel="tuple.c" index="1">
+<position info="not_deleted" x="367" y="1"/>
+</item>
+<item historyLabel="tuple.c" index="1">
+<position info="not_deleted" x="701" y="0"/>
+</item>
+<item historyLabel="tuple.c" index="1">
+<position info="not_deleted" x="703" y="0"/>
 </item>
 <item historyLabel="functions.c" index="0">
-<position info="not_deleted" x="1792" y="0"/>
+<position info="not_deleted" x="6416" y="0"/>
+</item>
+<item historyLabel="functions.h" index="2">
+<position info="not_deleted" x="340" y="0"/>
 </item>
 <item historyLabel="functions.c" index="0">
-<position info="not_deleted" x="1858" y="0"/>
+<position info="not_deleted" x="6416" y="0"/>
 </item>
 <item historyLabel="functions.c" index="0">
-<position info="not_deleted" x="1874" y="0"/>
+<position/>
 </item>
 <item historyLabel="functions.c" index="0">
-<position info="not_deleted" x="698" y="0"/>
+<position info="not_deleted" x="137" y="0"/>
 </item>
 <item historyLabel="functions.c" index="0">
-<position info="not_deleted" x="806" y="0"/>
+<position/>
+</item>
+<item historyLabel="functions.h" index="2">
+<position info="not_deleted" x="340" y="0"/>
 </item>
 <item historyLabel="functions.c" index="0">
-<position info="not_deleted" x="1857" y="0"/>
+<position info="not_deleted" x="6395" y="21"/>
+</item>
+<item historyLabel="functions.h" index="2">
+<position info="not_deleted" x="340" y="0"/>
 </item>
 <item historyLabel="functions.c" index="0">
-<position info="not_deleted" x="303" y="0"/>
+<position info="not_deleted" x="6395" y="21"/>
 </item>
 <item historyLabel="functions.c" index="0">
-<position info="not_deleted" x="1792" y="0"/>
+<position info="not_deleted" x="4066" y="0"/>
 </item>
 <item historyLabel="functions.c" index="0">
-<position info="not_deleted" x="1814" y="0"/>
+<position info="not_deleted" x="4065" y="0"/>
 </item>
 <item historyLabel="functions.c" index="0">
-<position info="not_deleted" x="1874" y="0"/>
+<position info="not_deleted" x="4280" y="0"/>
 </item>
 <item historyLabel="functions.c" index="0">
-<position info="not_deleted" x="1855" y="0"/>
+<position info="not_deleted" x="6763" y="3"/>
 </item>
 <item historyLabel="functions.c" index="0">
-<position info="not_deleted" x="303" y="0"/>
+<position info="not_deleted" x="6697" y="0"/>
 </item>
 <item historyLabel="functions.c" index="0">
-<position info="not_deleted" x="1792" y="0"/>
+<position info="not_deleted" x="6919" y="66"/>
+</item>
+<item historyLabel="functions.h" index="2">
+<position info="not_deleted" x="452" y="0"/>
 </item>
 <item historyLabel="functions.c" index="0">
-<position info="not_deleted" x="1814" y="0"/>
+<position info="not_deleted" x="6951" y="33"/>
+</item>
+<item historyLabel="functions.h" index="2">
+<position info="not_deleted" x="408" y="0"/>
 </item>
 <item historyLabel="functions.c" index="0">
-<position info="not_deleted" x="1874" y="0"/>
+<position info="not_deleted" x="6951" y="33"/>
 </item>
 <item historyLabel="functions.c" index="0">
-<position info="not_deleted" x="1815" y="16"/>
+<position info="not_deleted" x="7288" y="0"/>
 </item>
 <item historyLabel="functions.c" index="0">
-<position info="not_deleted" x="303" y="0"/>
+<position info="not_deleted" x="7360" y="5"/>
 </item>
 <item historyLabel="functions.c" index="0">
-<position info="not_deleted" x="1874" y="0"/>
+<position info="not_deleted" x="7046" y="0"/>
 </item>
 <item historyLabel="functions.c" index="0">
-<position info="not_deleted" x="1958" y="0"/>
+<position/>
 </item>
 <item historyLabel="functions.c" index="0">
-<position info="not_deleted" x="1976" y="0"/>
+<position info="not_deleted" x="4934" y="0"/>
 </item>
 <item historyLabel="functions.c" index="0">
-<position info="not_deleted" x="2035" y="0"/>
+<position info="not_deleted" x="7862" y="0"/>
 </item>
 <item historyLabel="functions.c" index="0">
-<position info="not_deleted" x="2034" y="0"/>
+<position info="not_deleted" x="7872" y="0"/>
 </item>
 <item historyLabel="functions.c" index="0">
-<position info="not_deleted" x="2265" y="0"/>
+<position info="not_deleted" x="7768" y="40"/>
+</item>
+<item historyLabel="functions.h" index="2">
+<position info="not_deleted" x="452" y="0"/>
 </item>
 <item historyLabel="functions.c" index="0">
-<position info="not_deleted" x="437" y="0"/>
+<position info="not_deleted" x="7768" y="40"/>
 </item>
 <item historyLabel="functions.c" index="0">
-<position info="not_deleted" x="4938" y="0"/>
+<position info="not_deleted" x="4280" y="0"/>
 </item>
 <item historyLabel="functions.c" index="0">
-<position info="not_deleted" x="4940" y="0"/>
+<position info="not_deleted" x="7801" y="0"/>
+</item>
+<item historyLabel="functions.h" index="2">
+<position info="not_deleted" x="444" y="0"/>
 </item>
 <item historyLabel="functions.c" index="0">
-<position info="not_deleted" x="4985" y="0"/>
+<position info="not_deleted" x="3167" y="0"/>
+</item>
+<item historyLabel="tuple.c" index="1">
+<position info="not_deleted" x="703" y="0"/>
 </item>
 <item historyLabel="functions.c" index="0">
-<position info="not_deleted" x="5034" y="0"/>
+<position info="not_deleted" x="5164" y="0"/>
 </item>
-<item historyLabel="functions.c" index="0">
-<position info="not_deleted" x="5083" y="0"/>
+<item historyLabel="node.c" index="3">
+<position info="not_deleted" x="66" y="0"/>
 </item>
-<item historyLabel="functions.c" index="0">
-<position info="not_deleted" x="5132" y="0"/>
+<item historyLabel="tuple.c" index="1">
+<position info="not_deleted" x="703" y="0"/>
 </item>
-<item historyLabel="functions.c" index="0">
-<position info="not_deleted" x="5194" y="0"/>
+<item historyLabel="node.h" index="4">
+<position info="not_deleted" x="134" y="27"/>
 </item>
-<item historyLabel="functions.c" index="0">
-<position info="not_deleted" x="4938" y="0"/>
+<item historyLabel="tuple.h" index="5">
+<position info="not_deleted" x="203" y="0"/>
 </item>
-<item historyLabel="functions.c" index="0">
-<position info="not_deleted" x="437" y="0"/>
-</item>
-<item historyLabel="functions.c" index="0">
-<position info="not_deleted" x="4938" y="0"/>
-</item>
-<item historyLabel="functions.c" index="0">
-<position info="not_deleted" x="4940" y="0"/>
-</item>
-<item historyLabel="functions.c" index="0">
-<position info="not_deleted" x="4985" y="0"/>
-</item>
-<item historyLabel="functions.c" index="0">
-<position info="not_deleted" x="5034" y="0"/>
-</item>
-<item historyLabel="functions.c" index="0">
-<position info="not_deleted" x="5083" y="0"/>
-</item>
-<item historyLabel="functions.c" index="0">
-<position info="not_deleted" x="5132" y="0"/>
-</item>
-<item historyLabel="functions.c" index="0">
-<position info="not_deleted" x="5258" y="0"/>
-</item>
-<item historyLabel="functions.c" index="0">
-<position info="not_deleted" x="4940" y="30"/>
-</item>
-<item historyLabel="functions.c" index="0">
-<position info="not_deleted" x="434" y="0"/>
+<item historyLabel="functions.h" index="2">
+<position info="not_deleted" x="444" y="0"/>
 </item>
 <item active="true" historyLabel="functions.c" index="0">
-<position info="not_deleted" x="433" y="0"/>
+<position info="not_deleted" x="5164" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -494,23 +525,41 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="functions.h" tooltip="Hwk2/headers/functions.h">
+<persistable path="/Hwk2/headers/functions.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="tuple.h" tooltip="Hwk2/headers/tuple.h">
+<persistable path="/Hwk2/headers/tuple.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="node.h" tooltip="Hwk2/headers/node.h">
+<persistable path="/Hwk2/headers/node.h"/>
+</file>
+<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="ammintrin.h" tooltip="/usr/lib/gcc/i486-linux-gnu/4.4/include/ammintrin.h">
+<persistable path="/usr/lib/gcc/i486-linux-gnu/4.4/include/ammintrin.h" project="Hwk2"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="tuple.h" tooltip="Hwk2/tuple.h">
+<persistable path="/Hwk2/tuple.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="tuple.c" tooltip="Hwk2/tuple.c">
+<persistable path="/Hwk2/tuple.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="functions.c" tooltip="Hwk1/functions.c">
+<persistable path="/Hwk1/functions.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="node.c" tooltip="Hwk2/node.c">
+<persistable path="/Hwk2/node.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="functions.h" tooltip="Hwk2/functions.h">
+<persistable path="/Hwk2/functions.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="node.h" tooltip="Hwk2/node.h">
+<persistable path="/Hwk2/node.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="functions.c" tooltip="Hwk2/functions.c">
+<persistable path="/Hwk2/functions.c"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.make.editor" name="makefile" tooltip="Functions/Debug/makefile">
 <persistable path="/Functions/Debug/makefile"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="functions.d" tooltip="Functions/Debug/functions.d">
-<persistable path="/Functions/Debug/functions.d"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.make.editor" name="subdir.mk" tooltip="Functions/Debug/subdir.mk">
-<persistable path="/Functions/Debug/subdir.mk"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.make.editor" name="sources.mk" tooltip="Functions/Debug/sources.mk">
-<persistable path="/Functions/Debug/sources.mk"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.make.editor" name="objects.mk" tooltip="Functions/Debug/objects.mk">
-<persistable path="/Functions/Debug/objects.mk"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="functions.c" tooltip="Functions/functions.c">
-<persistable path="/Functions/functions.c"/>
 </file>
 </mruList>
 </workbench>

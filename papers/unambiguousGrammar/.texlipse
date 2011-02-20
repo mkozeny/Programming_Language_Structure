@@ -1,0 +1,13 @@
+#TeXlipse project settings
+#Sat Feb 19 21:30:51 CST 2011
+builderNum=2
+outputDir=
+makeIndSty=
+bibrefDir=
+outputFormat=pdf
+tempDir=tmp
+mainTexFile=unambiguous_grammar.tex
+outputFile=unambiguous_grammar.pdf
+langSpell=en
+markDer=true
+srcDir=

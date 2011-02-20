@@ -1,0 +1,139 @@
+\title{Unambiguous grammar} \author{
+        Martin Kozeny\\
+        CSCI 4501: Programming Language Structure\\
+        Spring 2011
+        University of New Orleans
+}
+\date{\today}
+
+
+
+
+\documentclass[5pt]{article}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{qtree}
+\usepackage{multicol}
+%\usepackage{chemarrow}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+  \usepackage{courier}
+ 
+ \lstset{language=Java,
+         basicstyle=\footnotesize\ttfamily, % Standardschrift
+         %numbers=left,               % Ort der Zeilennummern
+         numberstyle=\tiny,          % Stil der Zeilennummern
+         %stepnumber=2,               % Abstand zwischen den Zeilennummern
+         numbersep=5pt,              % Abstand der Nummern zum Text
+         tabsize=2,                  % Groesse von Tabs
+         extendedchars=true,         %
+         breaklines=true,            % Zeilen werden Umgebrochen
+         keywordstyle=\color{blue},
+         %       frame=b,         
+         keywordstyle=[1]\textbf,    % Stil der Keywords
+         keywordstyle=[2]\color{blue},    %
+ %        keywordstyle=[3]\textbf,    %
+ %        keywordstyle=[4]\textbf,   \sqrt{\sqrt{}} %
+         %stringstyle=\color{white}\ttfamily, % Farbe der String
+         showspaces=false,           % Leerzeichen anzeigen ?
+         showtabs=false,             % Tabs anzeigen ?
+         xleftmargin=17pt,
+         framexleftmargin=17pt,
+         framexrightmargin=5pt,
+         framexbottommargin=4pt,
+         %backgroundcolor=\color{lightgray},
+         showstringspaces=false      % Leerzeichen in Strings anzeigen ?        
+ }
+ \lstloadlanguages{% Check Dokumentation for further languages ...
+         %[Visual]Basic
+         %Pascal
+         %C
+         %C++
+         %XML
+         %HTML
+         %Lisp
+         Java
+ }
+
+
+\setlength{\hoffset}{-2.3cm} 
+\setlength{\voffset}{-3cm}
+\setlength{\textheight}{24.0cm} 
+\setlength{\textwidth}{16cm}
+
+
+\begin{document}
+
+
+\maketitle
+
+\section{Ambiguous grammar}
+According to regular grammar presented in \cite{muller:programovaci_jazyky},
+page 15, we can write similar grammar for arithmetic operations + and -, which
+will be ambigious. Context-free grammar $G$ = (\{$E$\}, \{$a$, $+$, $-$\}, \{ $E
+\rightarrow E + E | E - E | a$ \}, $E$), where $G$
+= ($N, T, R, S$) is set of $N$ = nonterminals, $T$ = terminals, $R$ = rules and
+$S$ = start symbol, is ambiguous. Let's take for example expression $27 - 4
++3$. We can write for this expression more than one derivation tree (trees (a)
+and (b)). For better readability, we will show rules in rows:\newline
+\begin{enumerate} 
+  \item $E \rightarrow E + E$
+  \item $E \rightarrow E - E$
+  \item $E \rightarrow a$ 
+\end{enumerate}
+
+%\Tree [.E [.E [.E a]+[.E a]]+[.E a]]
+
+%\Tree [.E [.E a ] + [.E [.E ]+ [.E ] ] ]
+\begin{multicols}{2}
+
+
+  
+	(a)\Tree [.E [.E {a}(27)  ].E + [.E [.E a ]+ [.E a ] ] ].E
+	
+  
+
+
+  
+	(b)\Tree [.E [.E [.E a ]+ [.E a ]  ].E + [.E a ] ].E
+\end{multicols}
+\section{Unambiguous grammar}
+Now we have to change rules in order to get unambiguous grammar. In other words
+we have to create grammar with left associativity. Due to this fact, we add new
+nonterminal symbol $T$ (term). This nonterminal symbol guarantee, that on the
+left side of parse tree will be nonterminal $E$ (expression), which has to be
+evaluated first in order to get the left operand. Whole grammar will looks that:
+$G$ = (\{$E$, $T$\}, \{$a$, $+$, $*$\}, \{ $E \rightarrow E + T | E - T | T$, $T
+\rightarrow T + a | T - a$, $T \rightarrow a$ \}, $E$). Rules in rows:\newline
+\begin{enumerate} 
+  \item $E \rightarrow E + T$
+  \item $E \rightarrow E - T$
+  \item $E \rightarrow T$
+  \item $T \rightarrow T + a$
+  \item $T \rightarrow T - a$ 
+  \item $T \rightarrow a$
+\end{enumerate}
+%\Tree [.E [ [ [a].T ].E+ [ a ].E  ].E + [ a ].E ].E
+%\Tree [.E [.E [.E a ]+ [.E a ]  ].E + [.E a ] ].E
+
+	%\Tree [.E  [[ a ].E + [.T a ]].E + [.T a ].T  ]
+	\Tree [.E [[[a ].T ].E + [a ].E ].E + [ a ].T ]
+	
+	
+
+
+
+
+\begin{thebibliography}{1}
+
+\bibitem{muller:programovaci_jazyky}
+Doc. Ing. Karel Müller, Csc; Czech Technical University in Prague, Faculty of
+Electrical Engeneering, department of computer science; \textit{Programovací
+jayzky}, October 2001.
+
+\end{thebibliography}
+
+
+
+\end{document}
