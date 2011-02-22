@@ -1,0 +1,18 @@
+#ifndef NODE_H_
+#define NODE_H_
+
+#endif /*NODE_H_*/
+
+struct NODE {
+ int number;
+ int* array;
+ struct NODE *next;
+};
+
+int search_value(struct NODE *llist, int num);
+void append_node(struct NODE *llist, int num);
+void display_list(struct NODE *llist);
+void display_list_array(struct NODE *llist, int length);
+void delete_node(struct NODE *llist, int num);
+void append_node_array(struct NODE *llist, int* array);
+int sum(struct NODE *llist);

@@ -1,0 +1,323 @@
+#include <stdio.h>
+#include <string.h>
+#include "headers/node.h"
+#include "headers/tuple.h"
+#include "headers/functions.h"
+
+int main() {
+	printf("1. Define a function that computes the sum of the of the squares 1..n, given n\r\n");
+	int n = 5;
+	printf("for n=%i is sum of squares: %i\r\n", n, sum_square(n));
+	n = 8;
+	printf("for n=%i is sum of squares: %i\r\n", n, sum_square(n));
+	n = 10;
+	printf("for n=%i is sum of squares: %i\r\n", n, sum_square(n));
+	n = 13;
+	printf("for n=%i is sum of squares: %i\r\n", n, sum_square(n));
+	n = 15;
+	printf("for n=%i is sum of squares: %i\r\n", n, sum_square(n));
+
+	struct NODE *llist;
+	llist = (struct NODE *)malloc(sizeof(struct NODE));
+	printf("2. Define the function that returns the list of all pythagorean triples "
+		"whose components greater than 0 and less that the given integer.\r\n");
+	n=10;
+	printf("for n=%i are all pythagorean triples:\r\n", n);
+	is_pyth(n, llist);
+	display_list_array(llist, 3);
+	llist = (struct NODE *)malloc(sizeof(struct NODE));
+	n=20;
+	printf("for n=%i are all pythagorean triples:\r\n", n);
+	is_pyth(n, llist);
+	display_list_array(llist, 3);
+	llist = (struct NODE *)malloc(sizeof(struct NODE));
+	n=30;
+	printf("for n=%i are all pythagorean triples:\r\n", n);
+	is_pyth(n, llist);
+	display_list_array(llist, 3);
+	llist = (struct NODE *)malloc(sizeof(struct NODE));
+	n=40;
+	printf("for n=%i are all pythagorean triples:\r\n", n);
+	is_pyth(n, llist);
+	display_list_array(llist, 3);
+	llist = (struct NODE *)malloc(sizeof(struct NODE));
+	n=50;
+	printf("for n=%i are all pythagorean triples:\r\n", n);
+	is_pyth(n, llist);
+	display_list_array(llist, 3);
+
+	llist = (struct NODE *)malloc(sizeof(struct NODE));
+	printf("3. A positive integer is perfect if it equals the sum of its factors, excluding the number itself. Define the function "
+		"that returns the list of all perfect numbers up to the given input number\r\n");
+	n=30;
+	perfectInt(n, llist);
+	printf("for n=%i are perfect numbers:\r\n", n);
+	display_list(llist);
+	llist = (struct NODE *)malloc(sizeof(struct NODE));
+	n=100;
+	perfectInt(n, llist);
+	printf("for n=%i are perfect numbers:\r\n", n);
+	display_list(llist);
+	llist = (struct NODE *)malloc(sizeof(struct NODE));
+	n=500;
+	perfectInt(n, llist);
+	printf("for n=%i are perfect numbers:\r\n", n);
+	display_list(llist);
+	llist = (struct NODE *)malloc(sizeof(struct NODE));
+	n=1000;
+	perfectInt(n, llist);
+	printf("for n=%i are perfect numbers:\r\n", n);
+	display_list(llist);
+	llist = (struct NODE *)malloc(sizeof(struct NODE));
+	n=10000;
+	perfectInt(n, llist);
+	printf("for n=%i are perfect numbers:\r\n", n);
+	display_list(llist);
+
+	struct TUPLE * tuple;
+	printf("4. Define a function that takes a string containing digits and any other characters, and returns a pair where the first "
+		"component is the list of digits in the string in the order they occur in the input string, and the second pair contains the "
+		"rest of characters of the string in the order they occur.\r\n");
+	tuple = (struct TUPLE *)malloc(sizeof(struct TUPLE));
+	char * str ="Value#1 value#2 35 !";
+	init_tuple(tuple, str);
+	splitString(str, tuple);
+	printf("for \"%s\" is requested tuple:\r\n", str);
+	print_tuple(tuple);
+	tuple = (struct TUPLE *)malloc(sizeof(struct TUPLE));
+	str ="GreAT &&2*30!0 FuN B9o0Y!23#";
+	init_tuple(tuple, str);
+	splitString(str, tuple);
+	printf("for \"%s\" is requested tuple:\r\n", str);
+	print_tuple(tuple);
+	tuple = (struct TUPLE *)malloc(sizeof(struct TUPLE));
+	str ="I23& 1jU1**s12T CA#32me T98#2O s#2Ay# He43LL2o!#?#";
+	init_tuple(tuple, str);
+	splitString(str, tuple);
+	printf("for \"%s\" is requested tuple:\r\n", str);
+	print_tuple(tuple);
+	tuple = (struct TUPLE *)malloc(sizeof(struct TUPLE));
+	str ="T56h44e65 O656nL4y4 W65A245y32 T32o32 HA23vE 2a34 FR#i$En$d I5S3 t[$$]3452O B76e 3A11 FRiE_32nD!(23)";
+	init_tuple(tuple, str);
+	splitString(str, tuple);
+	printf("for \"%s\" is requested tuple:\r\n", str);
+	print_tuple(tuple);
+
+	printf("5. Define merge sort.\r\n");
+	int length = 11;
+	int * list = malloc(length*sizeof(int));
+	list[0]=2;
+	list[1]=12;
+	list[2]=213;
+	list[3]=45;
+	list[4]=786;
+	list[5]=221;
+	list[6]=13;
+	list[7]=56;
+	list[8]=67;
+	list[9]=64;
+	list[10]=203;
+	printf("For unsorted array:\r\n");
+	array_output(list, length);
+	int * sorted_list = merge_sort(list, length);
+	printf("is sorted array:\r\n");
+	array_output(sorted_list, length);
+	length = 8;
+	list = malloc(length*sizeof(int));
+	list[0]=43;
+	list[1]=123;
+	list[2]=321;
+	list[3]=25;
+	list[4]=76;
+	list[5]=211;
+	list[6]=131;
+	list[7]=12;
+	printf("For unsorted array:\r\n");
+	array_output(list, length);
+	sorted_list = merge_sort(list, length);
+	printf("is sorted array:\r\n");
+	array_output(sorted_list, length);
+	length = 15;
+	list = malloc(length*sizeof(int));
+	list[0]=423;
+	list[1]=13;
+	list[2]=31;
+	list[3]=225;
+	list[4]=76;
+	list[5]=21;
+	list[6]=1231;
+	list[7]=412;
+	list[8]=152;
+	list[9]=2;
+	list[10]=382;
+	list[11]=341;
+	list[12]=65;
+	list[13]=586;
+	list[14]=23;
+	printf("For unsorted array:\r\n");
+	array_output(list, length);
+	sorted_list = merge_sort(list, length);
+	printf("is sorted array:\r\n");
+	array_output(sorted_list, length);
+
+	free(llist);
+	free(tuple);
+	free(list);
+	free(sorted_list);
+
+	return 0;
+}
+/* input of this function is int ad this function also returns int
+ * in the for cycle counts square of number 1 to n and add the result to sum
+ * */
+int sum_square(int n) {
+	int i;
+	int sum = 0;
+	for (i = 1; i <= n; i++)
+		sum+=i*i;
+	return sum;
+}
+/* this function expects as an input int and NODE pointer 
+ * and output is a list of triples; in this function are three sides of triangle
+ *  controlled by the function test_pyth if given sides are sides
+ *  of pythagorean triangle; if yes they are add to the linked list
+ * of NODEs in array
+ * */
+void is_pyth(int n, struct NODE *llist) {
+	int* result;
+	int c;
+	int a;
+	int b;
+	for (c = 1; c <= n; c++) {
+		for (a = 1; a < c; a++) {
+			for (b = 1; b < c; b++) {
+				if (test_pyth(a, b, c)) {
+					result = malloc(3 * sizeof(int));
+					result[0] = a;
+					result[1] = b;
+					result[2] = c;
+					append_node_array(llist, result);
+				}
+			}
+		}
+	}
+}
+/* this function expects as input three ints and output is also int
+ * function controls if input values
+ *  are sides of pythagorean triangle
+ * */
+int test_pyth(int a, int b, int c) {
+	if (a*a + b*b == c*c)
+		return 1;
+	else
+		return 0;
+}
+/* this function expects as an input int and a linked list of NODEs;
+ * firstly function get list of divisors, then sum them and tests if 
+ * the result is equal to actual number, if yes actual number is added
+ * */
+void perfectInt(int n, struct NODE *llist) {
+	struct NODE * llist1;
+	int i;
+	llist1 = (struct NODE *)malloc(sizeof(struct NODE));
+	for (i = 1; i <= n; i++) {
+		divisors(i, llist1);
+		if (sum(llist1)==i) {
+			append_node(llist, i);
+		}
+		llist1 = (struct NODE *)malloc(sizeof(struct NODE));
+	}
+	free(llist1);
+}
+/* this function expects as an input int and a linked list of NODEs;
+ * function fills input linked list with divisors of input integer n
+ * except for number itself 
+ * */
+void divisors(int n, struct NODE *llist1) {
+	int i;
+	for (i = 1; i < n; i++) {
+		if ((n % i) == 0)
+			append_node(llist1, i);
+	}
+}
+/* this function expects as an input array fo characters and a TUPLE;
+ * function fills in cycle first part of input TUPLE with integers from input
+ * char array and second part fills with rest characters
+ * */
+void splitString(char* s, struct TUPLE *tuple) {
+	int i;
+	int length = strlen(s);
+	for (i = 0; i< length; i++) {
+		if (s[i]>=48 && s[i]<=57)
+			add_number_to_tuple(tuple, s[i]);
+		else
+			add_character_to_tuple(tuple, s[i]);
+	}
+}
+/*this function expexts as an input array of ints and one integer
+ * (length of that array)
+ * this function firstly recursively divide input list
+ * in halves and then these peices are joined and ordered by function merge
+ * */
+int* merge_sort(int* list, int length) {
+	if (length <= 1)
+		return list;
+	int * left;
+	int * right;
+	int * result;
+	int middle = length / 2;
+	left = malloc(middle*sizeof(int));
+	right = malloc((length-middle)*sizeof(int));
+	result = malloc(length*sizeof(int));
+	int i;
+	for (i = 0; i < middle; i++)
+		left[i] = list[i];
+	for (i = middle; i < length; i++)
+		right[i-middle] = list[i];
+
+	left = merge_sort(left, middle);
+	right = merge_sort(right, (length -middle));
+	result = merge(left, right, middle, (length -middle));
+	free(left);
+	free(right);
+	return result;
+}
+/* this function expexts as an input two arrays of ints and two integers
+ * (lengths of that arrays)
+ * this function is used for joining two ordered lists into ordered list
+ * */
+int* merge(int* left, int* right, int lengthLeft, int lengthRight) {
+	int* result = malloc((lengthLeft+lengthRight)*sizeof(int));
+	int resultPointer=0;
+	int leftPointer=0;
+	int rightPointer=0;
+	while (lengthLeft > leftPointer || lengthRight > rightPointer) {
+		if (lengthLeft > leftPointer && lengthRight > rightPointer) {
+			if (left[leftPointer] <= right[rightPointer]) {
+				result[resultPointer] = left[leftPointer];
+				resultPointer++;
+				leftPointer++;
+			} else {
+				result[resultPointer] = right[rightPointer];
+				resultPointer++;
+				rightPointer++;
+			}
+		} else if (lengthLeft > leftPointer) {
+			result[resultPointer] = left[leftPointer];
+			resultPointer++;
+			leftPointer++;
+		} else if (lengthRight > rightPointer) {
+			result[resultPointer] = right[rightPointer];
+			resultPointer++;
+			rightPointer++;
+		}
+	}
+	return result;
+
+}
+void array_output(int* list, int length) {
+	int i;
+	for (i = 0; i < length; i++)
+		printf("%i ", list[i]);
+	printf("\r\n");
+}

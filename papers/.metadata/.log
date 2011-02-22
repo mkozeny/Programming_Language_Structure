@@ -5502,3 +5502,57 @@ Java Model Exception: Java Model Status [src [in meaningOfVariables] does not ex
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1311)
 !SUBENTRY 1 org.eclipse.jdt.core 4 969 2011-02-15 16:52:49.808
 !MESSAGE src [in meaningOfVariables] does not exist
+!SESSION 2011-02-20 16:36:47.745 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_20
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.ui.workbench 2 0 2011-02-20 17:49:32.086
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2011-02-20 17:49:32.086
+!MESSAGE Conflict for 'org.eclipse.wst.jsdt.ui.edit.text.java.open.editor':
+HandlerActivation(commandId=org.eclipse.wst.jsdt.ui.edit.text.java.open.editor,
+	handler=ActionHandler(org.eclipse.wst.jsdt.ui.actions.OpenAction@1e28608),
+	expression=AndExpression(AndExpression(org.eclipse.ui.SubActionBars$1@1fcc4f8,ActivePartExpression(org.eclipse.ui.navigator.resources.ProjectExplorer@b48e23)),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@124e935)),sourcePriority=1064961)
+HandlerActivation(commandId=org.eclipse.wst.jsdt.ui.edit.text.java.open.editor,
+	handler=ActionHandler(org.eclipse.wst.jsdt.ui.actions.OpenAction@1e28608),
+	expression=AndExpression(AndExpression(org.eclipse.ui.SubActionBars$1@1fcc4f8,ActivePartExpression(org.eclipse.ui.navigator.resources.ProjectExplorer@b48e23)),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@124e935)),sourcePriority=1064961)
+!SESSION 2011-02-20 17:51:02.612 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_20
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.ui.workbench 2 0 2011-02-20 17:52:45.727
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2011-02-20 17:52:45.727
+!MESSAGE Conflict for 'org.eclipse.wst.jsdt.ui.edit.text.java.open.editor':
+HandlerActivation(commandId=org.eclipse.wst.jsdt.ui.edit.text.java.open.editor,
+	handler=ActionHandler(org.eclipse.wst.jsdt.ui.actions.OpenAction@ef87ba),
+	expression=AndExpression(AndExpression(org.eclipse.ui.SubActionBars$1@12eceb,ActivePartExpression(org.eclipse.ui.navigator.resources.ProjectExplorer@654dec)),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1d056de)),sourcePriority=1064961)
+HandlerActivation(commandId=org.eclipse.wst.jsdt.ui.edit.text.java.open.editor,
+	handler=ActionHandler(org.eclipse.wst.jsdt.ui.actions.OpenAction@ef87ba),
+	expression=AndExpression(AndExpression(org.eclipse.ui.SubActionBars$1@12eceb,ActivePartExpression(org.eclipse.ui.navigator.resources.ProjectExplorer@654dec)),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1d056de)),sourcePriority=1064961)
+!SESSION 2011-02-21 23:18:13.521 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_20
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.ui.workbench 2 0 2011-02-21 23:24:14.899
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2011-02-21 23:24:14.899
+!MESSAGE Conflict for 'org.eclipse.wst.jsdt.ui.edit.text.java.open.editor':
+HandlerActivation(commandId=org.eclipse.wst.jsdt.ui.edit.text.java.open.editor,
+	handler=ActionHandler(org.eclipse.wst.jsdt.ui.actions.OpenAction@d73856),
+	expression=AndExpression(AndExpression(org.eclipse.ui.SubActionBars$1@4737a3,ActivePartExpression(org.eclipse.ui.navigator.resources.ProjectExplorer@f5ebcc)),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@c19fbf)),sourcePriority=1064961)
+HandlerActivation(commandId=org.eclipse.wst.jsdt.ui.edit.text.java.open.editor,
+	handler=ActionHandler(org.eclipse.wst.jsdt.ui.actions.OpenAction@d73856),
+	expression=AndExpression(AndExpression(org.eclipse.ui.SubActionBars$1@4737a3,ActivePartExpression(org.eclipse.ui.navigator.resources.ProjectExplorer@f5ebcc)),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@c19fbf)),sourcePriority=1064961)

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.2.7)  16 FEB 2011 11:30
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.2.20)  20 FEB 2011 21:45
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -9,11 +9,11 @@ LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
 yphenation, farsi, arabic, croatian, bulgarian, ukrainian, russian, czech, slov
 ak, danish, dutch, finnish, french, basque, ngerman, german, german-x-2009-06-1
-9, ngerman-x-2009-06-19, ibycus, monogreek, greek, ancientgreek, hungarian, san
-skrit, italian, latin, latvian, lithuanian, mongolian2a, mongolian, bokmal, nyn
-orsk, romanian, irish, coptic, serbian, turkish, welsh, esperanto, uppersorbian
-, estonian, indonesian, interlingua, icelandic, kurmanji, slovenian, polish, po
-rtuguese, spanish, galician, catalan, swedish, ukenglish, pinyin, loaded.
+9, ngerman-x-2009-06-19, hungarian, sanskrit, italian, latin, latvian, lithuani
+an, mongolian2a, mongolian, bokmal, nynorsk, romanian, irish, coptic, serbian, 
+turkish, welsh, esperanto, uppersorbian, estonian, indonesian, interlingua, ice
+landic, kurmanji, slovenian, polish, portuguese, spanish, galician, catalan, sw
+edish, ukenglish, loaded.
 (/usr/share/texmf-texlive/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texmf-texlive/tex/latex/base/size10.clo
@@ -106,7 +106,8 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
 LaTeX Font Info:    ... okay on input line 61.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
 LaTeX Font Info:    ... okay on input line 61.
- (/usr/share/texmf/tex/context/base/supp-pdf.mkii
+
+(/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count96
 \scratchdimen=\dimen109
@@ -192,12 +193,12 @@ File: lstlang1.sty 2004/09/05 1.3 listings language file
 File: lstlang2.sty 2004/09/05 1.3 listings language file
 ) (./src/Variables.hs) [5] (./meaning_of_variables.aux) ) 
 Here is how much of TeX's memory you used:
- 2824 strings out of 493848
- 38133 string characters out of 1152824
- 248589 words of memory out of 3000000
- 6097 multiletter control sequences out of 15000+50000
+ 2824 strings out of 493930
+ 38157 string characters out of 1154817
+ 248511 words of memory out of 3000000
+ 6089 multiletter control sequences out of 15000+50000
  9750 words of font info for 35 fonts, out of 3000000 for 9000
- 714 hyphenation exceptions out of 8191
+ 669 hyphenation exceptions out of 8191
  29i,6n,40p,299b,1480s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf-texl
 ive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texlive/fonts/type1/public/am
@@ -208,7 +209,7 @@ xmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-texlive/
 fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1
 /urw/courier/ucrb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/courier/ucrr8
 a.pfb></usr/share/texmf-texlive/fonts/type1/urw/courier/ucrro8a.pfb>
-Output written on meaning_of_variables.pdf (5 pages, 137443 bytes).
+Output written on meaning_of_variables.pdf (5 pages, 137260 bytes).
 PDF statistics:
  55 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

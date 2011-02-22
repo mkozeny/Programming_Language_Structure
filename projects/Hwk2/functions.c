@@ -26,54 +26,53 @@ int main() {
 	is_pyth(n, llist);
 	display_list_array(llist, 3);
 	llist = (struct NODE *)malloc(sizeof(struct NODE));
+	n=20;
+	printf("for n=%i are all pythagorean triples:\r\n", n);
+	is_pyth(n, llist);
+	display_list_array(llist, 3);
+	llist = (struct NODE *)malloc(sizeof(struct NODE));
+	n=30;
+	printf("for n=%i are all pythagorean triples:\r\n", n);
+	is_pyth(n, llist);
+	display_list_array(llist, 3);
+	llist = (struct NODE *)malloc(sizeof(struct NODE));
 	n=40;
 	printf("for n=%i are all pythagorean triples:\r\n", n);
 	is_pyth(n, llist);
 	display_list_array(llist, 3);
 	llist = (struct NODE *)malloc(sizeof(struct NODE));
-	n=60;
-	printf("for n=%i are all pythagorean triples:\r\n", n);
-	is_pyth(n, llist);
-	display_list_array(llist, 3);
-	llist = (struct NODE *)malloc(sizeof(struct NODE));
-	n=80;
-	printf("for n=%i are all pythagorean triples:\r\n", n);
-	is_pyth(n, llist);
-	display_list_array(llist, 3);
-	llist = (struct NODE *)malloc(sizeof(struct NODE));
-	n=100;
+	n=50;
 	printf("for n=%i are all pythagorean triples:\r\n", n);
 	is_pyth(n, llist);
 	display_list_array(llist, 3);
 
-	struct NODE *llist1;
-	llist1 = (struct NODE *)malloc(sizeof(struct NODE));
+	llist = (struct NODE *)malloc(sizeof(struct NODE));
 	printf("3. A positive integer is perfect if it equals the sum of its factors, excluding the number itself. Define the function "
 		"that returns the list of all perfect numbers up to the given input number\r\n");
 	n=30;
-	perfectInt(n, llist1);
+	perfectInt(n, llist);
 	printf("for n=%i are perfect numbers:\r\n", n);
-	display_list(llist1);
-	llist1 = (struct NODE *)malloc(sizeof(struct NODE));
+	display_list(llist);
+	llist = (struct NODE *)malloc(sizeof(struct NODE));
 	n=100;
-	perfectInt(n, llist1);
+	perfectInt(n, llist);
 	printf("for n=%i are perfect numbers:\r\n", n);
-	display_list(llist1);
-	llist1 = (struct NODE *)malloc(sizeof(struct NODE));
+	display_list(llist);
+	llist = (struct NODE *)malloc(sizeof(struct NODE));
 	n=500;
-	perfectInt(n, llist1);
+	perfectInt(n, llist);
 	printf("for n=%i are perfect numbers:\r\n", n);
-	display_list(llist1);
-	llist1 = (struct NODE *)malloc(sizeof(struct NODE));
+	display_list(llist);
+	llist = (struct NODE *)malloc(sizeof(struct NODE));
 	n=1000;
-	perfectInt(n, llist1);
+	perfectInt(n, llist);
 	printf("for n=%i are perfect numbers:\r\n", n);
-	display_list(llist1);
-	llist1 = (struct NODE *)malloc(sizeof(struct NODE));
+	display_list(llist);
+	llist = (struct NODE *)malloc(sizeof(struct NODE));
 	n=10000;
-	perfectInt(n, llist1);
+	perfectInt(n, llist);
 	printf("for n=%i are perfect numbers:\r\n", n);
-	display_list(llist1);
+	display_list(llist);
 
 	struct TUPLE * tuple;
 	printf("4. Define a function that takes a string containing digits and any other characters, and returns a pair where the first "
@@ -162,9 +161,16 @@ int main() {
 	printf("is sorted array:\r\n");
 	array_output(sorted_list, length);
 
+	free(llist);
+	free(tuple);
+	free(list);
+	free(sorted_list);
+
 	return 0;
 }
-
+/* input of this function is int ad this function also returns int
+ * in the for cycle counts square of number 1 to n and add the result to sum
+ * */
 int sum_square(int n) {
 	int i;
 	int sum = 0;
@@ -172,6 +178,12 @@ int sum_square(int n) {
 		sum+=i*i;
 	return sum;
 }
+/* this function expects as an input int and NODE pointer 
+ * and output is a list of triples; in this function are three sides of triangle
+ *  controlled by the function test_pyth if given sides are sides
+ *  of pythagorean triangle; if yes they are add to the linked list
+ * of NODEs in array
+ * */
 void is_pyth(int n, struct NODE *llist) {
 	int* result;
 	int c;
@@ -191,12 +203,20 @@ void is_pyth(int n, struct NODE *llist) {
 		}
 	}
 }
+/* this function expects as input three ints and output is also int
+ * function controls if input values
+ *  are sides of pythagorean triangle
+ * */
 int test_pyth(int a, int b, int c) {
 	if (a*a + b*b == c*c)
 		return 1;
 	else
 		return 0;
 }
+/* this function expects as an input int and a linked list of NODEs;
+ * firstly function get list of divisors, then sum them and tests if 
+ * the result is equal to actual number, if yes actual number is added
+ * */
 void perfectInt(int n, struct NODE *llist) {
 	struct NODE * llist1;
 	int i;
@@ -208,8 +228,12 @@ void perfectInt(int n, struct NODE *llist) {
 		}
 		llist1 = (struct NODE *)malloc(sizeof(struct NODE));
 	}
+	free(llist1);
 }
-
+/* this function expects as an input int and a linked list of NODEs;
+ * function fills input linked list with divisors of input integer n
+ * except for number itself 
+ * */
 void divisors(int n, struct NODE *llist1) {
 	int i;
 	for (i = 1; i < n; i++) {
@@ -217,7 +241,10 @@ void divisors(int n, struct NODE *llist1) {
 			append_node(llist1, i);
 	}
 }
-
+/* this function expects as an input array fo characters and a TUPLE;
+ * function fills in cycle first part of input TUPLE with integers from input
+ * char array and second part fills with rest characters
+ * */
 void splitString(char* s, struct TUPLE *tuple) {
 	int i;
 	int length = strlen(s);
@@ -228,6 +255,11 @@ void splitString(char* s, struct TUPLE *tuple) {
 			add_character_to_tuple(tuple, s[i]);
 	}
 }
+/*this function expexts as an input array of ints and one integer
+ * (length of that array)
+ * this function firstly recursively divide input list
+ * in halves and then these peices are joined and ordered by function merge
+ * */
 int* merge_sort(int* list, int length) {
 	if (length <= 1)
 		return list;
@@ -247,8 +279,14 @@ int* merge_sort(int* list, int length) {
 	left = merge_sort(left, middle);
 	right = merge_sort(right, (length -middle));
 	result = merge(left, right, middle, (length -middle));
+	free(left);
+	free(right);
 	return result;
 }
+/* this function expexts as an input two arrays of ints and two integers
+ * (lengths of that arrays)
+ * this function is used for joining two ordered lists into ordered list
+ * */
 int* merge(int* left, int* right, int lengthLeft, int lengthRight) {
 	int* result = malloc((lengthLeft+lengthRight)*sizeof(int));
 	int resultPointer=0;
