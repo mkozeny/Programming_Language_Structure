@@ -1,0 +1,110 @@
+\title{Swapping two objects with void function in Java} \author{
+        Martin Kozeny\\
+        CSCI 4501: Programming Language Structure\\
+        Spring 2011
+        University of New Orleans
+}
+\date{\today}
+
+
+
+
+\documentclass[5pt]{article}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{qtree}
+\usepackage{multicol}
+%\usepackage{chemarrow}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+  \usepackage{courier}
+ 
+ \lstset{language=Java,
+         basicstyle=\footnotesize\ttfamily, % Standardschrift
+         numbers=left,               % Ort der Zeilennummern
+         numberstyle=\tiny,          % Stil der Zeilennummern
+         %stepnumber=2,               % Abstand zwischen den Zeilennummern
+         numbersep=5pt,              % Abstand der Nummern zum Text
+         tabsize=2,                  % Groesse von Tabs
+         extendedchars=true,         %
+         breaklines=true,            % Zeilen werden Umgebrochen
+         keywordstyle=\color{blue},
+         %       frame=b,         
+         keywordstyle=[1]\textbf,    % Stil der Keywords
+         keywordstyle=[2]\color{blue},    %
+ %        keywordstyle=[3]\textbf,    %
+ %        keywordstyle=[4]\textbf,   \sqrt{\sqrt{}} %
+         %stringstyle=\color{white}\ttfamily, % Farbe der String
+         showspaces=false,           % Leerzeichen anzeigen ?
+         showtabs=false,             % Tabs anzeigen ?
+         xleftmargin=17pt,
+         framexleftmargin=17pt,
+         framexrightmargin=5pt,
+         framexbottommargin=4pt,
+         %backgroundcolor=\color{lightgray},
+         showstringspaces=false      % Leerzeichen in Strings anzeigen ?        
+ }
+ \lstloadlanguages{% Check Dokumentation for further languages ...
+         %[Visual]Basic
+         %Pascal
+         %C
+         %C++
+         %XML
+         %HTML
+         %Lisp
+         Java
+ }
+
+
+\setlength{\hoffset}{-2.3cm} 
+\setlength{\voffset}{-3cm}
+\setlength{\textheight}{24.0cm} 
+\setlength{\textwidth}{16cm}
+
+
+\begin{document}
+
+
+\maketitle
+
+\section{Expression evaluation in Java}
+According to chapter 15, part 7 from \cite{java:jls},
+is Java's evaluation order from left to right, so the result of calling
+\verb|a*f(1)+a| in code below will be $10 * 1*11 + 11 = 121$.\newline
+\lstinputlisting[language=Java]{src/Main.java}
+\lstinputlisting[language=Java]{src/TestClass.java}
+
+\section{Expression evaluation in C}
+In C is the situation with evaluating expressions different. According to
+\cite{c:lrm}, C uses function first evaluation so the result of calling
+\verb|a*f(1)+a| in code below will be $11 * 1*11 + 11 = 132$. In C exists so
+called sequence points. According to \cite{wiki:encyclopedia}, sequence points
+are checkpoints which it is guaranteed that all side effects of previous evaluations will have been performed, and no
+side effects from subsequent evaluations have yet been performed. In our source
+code there are two sequence points: function-entry after the evaluation of all
+the function's arguments and before execution of anything the function's body
+and at function-exit after a returned value has been copied and before the
+calling function resumes execution. Function-entry sequence point guarantees,
+that input parameter a is evaluated (in our case parameter \verb|z|) and second
+function-exit s. p. guarantees incrementation \verb|a| and multiplying by
+\verb|x| before leaving function.
+
+
+\begin{thebibliography}{1}
+
+\bibitem{java:jls}
+Java Language specification, \verb|http://java.sun.com/docs/books/jls/|.
+
+\bibitem{c:lrm}
+C Language Reference Manual, April
+1999.
+
+\bibitem{wiki:encyclopedia}Wikipedia, The Free Encyclopedia,
+\verb|http://en.wikipedia.org/wiki/Sequence_point|
+
+\end{thebibliography}
+
+
+
+\end{document}

@@ -1,0 +1,150 @@
+\title{Swapping two objects with void function in Java} \author{
+        Martin Kozeny\\
+        CSCI 4501: Programming Language Structure\\
+        Spring 2011
+        University of New Orleans
+}
+\date{\today}
+
+
+
+
+\documentclass[5pt]{article}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{qtree}
+\usepackage{multicol}
+%\usepackage{chemarrow}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+  \usepackage{courier}
+ 
+ \lstset{language=Java,
+         basicstyle=\footnotesize\ttfamily, % Standardschrift
+         numbers=left,               % Ort der Zeilennummern
+         numberstyle=\tiny,          % Stil der Zeilennummern
+         %stepnumber=2,               % Abstand zwischen den Zeilennummern
+         numbersep=5pt,              % Abstand der Nummern zum Text
+         tabsize=2,                  % Groesse von Tabs
+         extendedchars=true,         %
+         breaklines=true,            % Zeilen werden Umgebrochen
+         keywordstyle=\color{blue},
+         %       frame=b,         
+         keywordstyle=[1]\textbf,    % Stil der Keywords
+         keywordstyle=[2]\color{blue},    %
+ %        keywordstyle=[3]\textbf,    %
+ %        keywordstyle=[4]\textbf,   \sqrt{\sqrt{}} %
+         %stringstyle=\color{white}\ttfamily, % Farbe der String
+         showspaces=false,           % Leerzeichen anzeigen ?
+         showtabs=false,             % Tabs anzeigen ?
+         xleftmargin=17pt,
+         framexleftmargin=17pt,
+         framexrightmargin=5pt,
+         framexbottommargin=4pt,
+         %backgroundcolor=\color{lightgray},
+         showstringspaces=false      % Leerzeichen in Strings anzeigen ?        
+ }
+ \lstloadlanguages{% Check Dokumentation for further languages ...
+         %[Visual]Basic
+         %Pascal
+         %C
+         %C++
+         %XML
+         %HTML
+         %Lisp
+         Java
+ }
+
+
+\setlength{\hoffset}{-2.3cm} 
+\setlength{\voffset}{-3cm}
+\setlength{\textheight}{24.0cm} 
+\setlength{\textwidth}{16cm}
+
+
+\begin{document}
+
+
+\maketitle
+
+\section{Theory}
+Before I write a method in Java, which swap two objects, it is necessary
+to introduce some theory around that problem. According to \cite{java:jon}, in
+Java is everything passed by value and objects are never passed at all. Moreover
+the values of variables are always primitives or references, never objects.
+\cite{java:jon} claims, that this results in the fact, that we cannot pass the
+object! So what the Java do when we call a function with object as a parameter?
+The answer is that Java pass \textbf{references to objects}. We can support this
+assertion with the second truth, that the values of variables are always
+primitives or references, never objects. Passing a reference by value actually
+means we can think of references how we think of primitives, to a large extent.
+This issue is also connected with the fact, that Java Virtual Machine has stack
+based architecture. That means when is some function called, firstly its
+parameters are pushed onto stack.
+\lstinputlisting[language=Java]{src/Main.java}
+\lstinputlisting[language=Java]{src/TestClass.java}
+
+
+Output of calling:\newline
+\newline
+Value of object a before swap: 1\newline
+Value of object b before swap: 2\newline
+Value of object a after swap: 1\newline
+Value of object b after swap: 2\newline
+\newline
+Value of object a before swap2: 1\newline
+Value of object b before swap2: 2\newline
+Value of object a after swap2: 2\newline
+Value of object b after swap2: 1\newline
+\newline
+Value of object a before swap3: 2\newline
+Value of object b before swap3: 1\newline
+Value of object a after swap3: 2\newline
+Value of object b after swap3: 1\newline
+\newline
+Value of object a before swap4: 2\newline
+Value of object b before swap4: 1\newline
+Value of object a after swap4: 2\newline
+Value of object b after swap4: 1\newline
+\newline
+Value of object a before swap5: 2\newline
+Value of object b before swap5: 1\newline
+Value of object a after swap5: 1\newline
+Value of object b after swap5: 2\newline
+\newline
+
+\section{Expression evaluation in C}
+In C is the situation with evaluating expressions different. According to
+\cite{c:lrm}, C uses function first evaluation so the result of calling
+\verb|a*f(1)+a| in code below will be $11 * 1*11 + 11 = 132$. In C exists so
+called sequence points. According to \cite{wiki:encyclopedia}, sequence points
+are checkpoints which it is guaranteed that all side effects of previous evaluations will have been performed, and no
+side effects from subsequent evaluations have yet been performed. In our source
+code there are two sequence points: function-entry after the evaluation of all
+the function's arguments and before execution of anything the function's body
+and at function-exit after a returned value has been copied and before the
+calling function resumes execution. Function-entry sequence point guarantees,
+that input parameter a is evaluated (in our case parameter \verb|z|) and second
+function-exit s. p. guarantees incrementation \verb|a| and multiplying by
+\verb|x| before leaving function.
+
+
+\begin{thebibliography}{1}
+
+\bibitem{java:jon}
+Jon's homepage, Jon Skeet, software engineer at Google,
+\verb|http://www.yoda.arachsys.com/java/passing.html#formal|.
+
+\bibitem{c:lrm}
+C Language Reference Manual, April
+1999.
+
+\bibitem{wiki:encyclopedia}Wikipedia, The Free Encyclopedia,
+\verb|http://en.wikipedia.org/wiki/Sequence_point|
+
+\end{thebibliography}
+
+
+
+\end{document}

@@ -1,0 +1,13 @@
+#TeXlipse project settings
+#Tue Feb 22 12:27:32 CST 2011
+builderNum=2
+outputDir=
+makeIndSty=
+bibrefDir=
+outputFormat=pdf
+tempDir=tmp
+mainTexFile=expression_evaluation.tex
+outputFile=expression_evaluation.pdf
+langSpell=en
+markDer=true
+srcDir=

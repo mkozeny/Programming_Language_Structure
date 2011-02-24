@@ -1,0 +1,13 @@
+#TeXlipse project settings
+#Wed Feb 23 23:02:30 CST 2011
+builderNum=2
+outputDir=
+makeIndSty=
+bibrefDir=
+outputFormat=pdf
+tempDir=tmp
+mainTexFile=java_methods_parameter_passing.tex
+outputFile=java_methods_parameter_passing.pdf
+langSpell=en
+markDer=true
+srcDir=

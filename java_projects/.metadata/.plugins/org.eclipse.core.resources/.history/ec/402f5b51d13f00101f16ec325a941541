@@ -1,0 +1,50 @@
+package main;
+
+public class Main {
+
+	/**
+	 * @param args
+	 * @return 
+	 */
+	static int a = 10;
+	
+	public static void main(String[] args) {
+		/*int x=2;
+		if(x<1)
+			if(x<1)
+				x=2;
+		else
+			x=2;
+		*/
+		//System.out.println(String.valueOf(a*f(1)+a));
+		TestClass a = new TestClass(1);
+		TestClass b = new TestClass(2);
+		System.out.println("Value of object a before swap: "+a.getValue());
+		System.out.println("Value of object b before swap: "+b.getValue());
+		swap(a,b);
+		System.out.println("Value of object a after swap: "+a.getValue());
+		System.out.println("Value of object b after swap: "+b.getValue());
+		
+		System.out.println("Value of object a before swap2: "+a.getValue());
+		System.out.println("Value of object b before swap2: "+b.getValue());
+		swap2(a,b);
+		System.out.println("Value of object a after swap2: "+a.getValue());
+		System.out.println("Value of object b after swap2: "+b.getValue());
+	}
+	public static int f(int x){
+		a = a + 1;
+		return x*a;
+	}
+	public static void swap(TestClass a, TestClass b)
+	{
+		TestClass tmp=b;
+		b=a;
+		a=tmp;
+	}
+	public static void swap2(TestClass a, TestClass b)
+	{
+		int tmpVal=b.getValue();
+		b.setValue(a.getValue());
+		a.setValue(tmpVal);
+	}
+}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.2.20)  21 FEB 2011 23:37
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.2.20)  23 FEB 2011 11:26
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -225,11 +225,11 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Here is how much of TeX's memory you used:
  2964 strings out of 493930
  39844 string characters out of 1154817
- 167086 words of memory out of 3000000
+ 167112 words of memory out of 3000000
  6227 multiletter control sequences out of 15000+50000
  9149 words of font info for 32 fonts, out of 3000000 for 9000
  669 hyphenation exceptions out of 8191
- 31i,6n,49p,218b,2028s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 31i,6n,49p,218b,2012s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
 re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texmf-tex
 live/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/t
@@ -239,7 +239,7 @@ cmr5.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmss9.pfb></u
 sr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/
 texmf-texlive/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/share/texmf-texli
 ve/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
-Output written on haskell_hwk2.pdf (15 pages, 148876 bytes).
+Output written on haskell_hwk2.pdf (15 pages, 148836 bytes).
 PDF statistics:
  91 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

@@ -1,0 +1,162 @@
+\title{Swapping two objects with void function in Java} \author{
+        Martin Kozeny\\
+        CSCI 4501: Programming Language Structure\\
+        Spring 2011
+        University of New Orleans
+}
+\date{\today}
+
+
+
+
+\documentclass[5pt]{article}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{qtree}
+\usepackage{multicol}
+%\usepackage{chemarrow}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+  \usepackage{courier}
+ 
+ \lstset{language=Java,
+         basicstyle=\footnotesize\ttfamily, % Standardschrift
+         numbers=left,               % Ort der Zeilennummern
+         numberstyle=\tiny,          % Stil der Zeilennummern
+         %stepnumber=2,               % Abstand zwischen den Zeilennummern
+         numbersep=5pt,              % Abstand der Nummern zum Text
+         tabsize=2,                  % Groesse von Tabs
+         extendedchars=true,         %
+         breaklines=true,            % Zeilen werden Umgebrochen
+         keywordstyle=\color{blue},
+         %       frame=b,         
+         keywordstyle=[1]\textbf,    % Stil der Keywords
+         keywordstyle=[2]\color{blue},    %
+ %        keywordstyle=[3]\textbf,    %
+ %        keywordstyle=[4]\textbf,   \sqrt{\sqrt{}} %
+         %stringstyle=\color{white}\ttfamily, % Farbe der String
+         showspaces=false,           % Leerzeichen anzeigen ?
+         showtabs=false,             % Tabs anzeigen ?
+         xleftmargin=17pt,
+         framexleftmargin=17pt,
+         framexrightmargin=5pt,
+         framexbottommargin=4pt,
+         %backgroundcolor=\color{lightgray},
+         showstringspaces=false      % Leerzeichen in Strings anzeigen ?        
+ }
+ \lstloadlanguages{% Check Dokumentation for further languages ...
+         %[Visual]Basic
+         %Pascal
+         %C
+         %C++
+         %XML
+         %HTML
+         %Lisp
+         Java
+ }
+
+
+\setlength{\hoffset}{-2.3cm} 
+\setlength{\voffset}{-3cm}
+\setlength{\textheight}{24.0cm} 
+\setlength{\textwidth}{16cm}
+
+
+\begin{document}
+
+
+\maketitle
+
+\section{Theory}
+Before I write a method in Java, which swap two objects, it is necessary
+to introduce some theory around that problem. According to \cite{java:jon}, in
+Java is everything passed by value and objects are never passed at all. Moreover
+the values of variables are always primitives or references, never objects.
+\cite{java:jon} claims, that this results in the fact, that we cannot pass the
+object! So what the Java do when we call a function with object as a parameter?
+The answer is that Java pass \textbf{references to objects}. We can support this
+assertion with the second truth, that the values of variables are always
+primitives or references, never objects. Passing a reference by value actually
+means we can think of references how we think of primitives, to a large extent.
+All in all into method is passed a copy of reference to object. That means that,
+when this object is modified inside the method, this change will appeared also
+on references to this object outside method scope. But when it is to variable
+inside the function, which references to object, gived reference to another
+object, reference to original object of course expires. We can that fact
+demonstrate on the source code shown below.
+%This issue is also connected with the fact, that Java Virtual Machine has stack
+%based architecture. That means when is some function called, firstly its
+%parameters are pushed onto stack. After jumping into method, these parameters
+%are poped. That is the same if parameter is primitive data type or object. When
+%new local variables inside function are assigned, they are also pushed onto
+%stack.
+
+When we study methods $swap_{i}()$, where $i \in {1\ldots5}$, we can
+successfully predict, which function will swap two objects and this action
+appears also in main scope. If we look at $swap1()$, we say that reference to
+the instance of object $b$ is passed to $tmp$ and then to object $b$ is passed
+reference to object $a$. After that is to variable $a$ given reference to object
+on which refers variable $temp$. After leaving scope of this function, ends
+scope of this local variables (also paramaters!) and in outer scope is
+everything unchanged. Similarly it is in method $swap3()$ and $swap4()$. In
+$swap3()$ object referred with variable $b$ is cloned but this object expired
+with end of the scope of method and the same thing happened to objects
+created by copy contructors in method $swap4()$. The only way to swap these
+objects is to change value of its field, than will be object, which is referred
+from outer scope also changed, because it is referred the same object from outer
+scope and also from inside context of method. Function $swap2$ and $swap5$ have
+the same effect, they only exchange value of object's fields. 
+\lstinputlisting[language=Java]{src/Main.java}
+\lstinputlisting[language=Java]{src/TestClass.java}
+
+
+Output of calling:\newline
+\newline
+Value of object a before swap: 1\newline
+Value of object b before swap: 2\newline
+Value of object a after swap: 1\newline
+Value of object b after swap: 2\newline
+\newline
+Value of object a before swap2: 1\newline
+Value of object b before swap2: 2\newline
+Value of object a after swap2: 2\newline
+Value of object b after swap2: 1\newline
+\newline
+Value of object a before swap3: 2\newline
+Value of object b before swap3: 1\newline
+Value of object a after swap3: 2\newline
+Value of object b after swap3: 1\newline
+\newline
+Value of object a before swap4: 2\newline
+Value of object b before swap4: 1\newline
+Value of object a after swap4: 2\newline
+Value of object b after swap4: 1\newline
+\newline
+Value of object a before swap5: 2\newline
+Value of object b before swap5: 1\newline
+Value of object a after swap5: 1\newline
+Value of object b after swap5: 2\newline
+\newline
+
+
+
+
+\begin{thebibliography}{1}
+
+\bibitem{java:jon}
+Jon's homepage, Jon Skeet, software engineer at Google,
+\verb|http://www.yoda.arachsys.com/java/passing.html#formal|.
+
+\bibitem{c:lrm}
+C Language Reference Manual, April
+1999.
+
+\bibitem{wiki:encyclopedia}Wikipedia, The Free Encyclopedia,
+\verb|http://en.wikipedia.org/wiki/Sequence_point|
+
+\end{thebibliography}
+
+
+
+\end{document}

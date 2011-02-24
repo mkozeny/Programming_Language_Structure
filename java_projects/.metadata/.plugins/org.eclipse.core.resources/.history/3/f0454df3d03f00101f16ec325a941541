@@ -1,0 +1,31 @@
+package main;
+
+public class Main {
+
+	/**
+	 * @param args
+	 * @return 
+	 */
+	static int a = 10;
+	
+	public static void main(String[] args) {
+		/*int x=2;
+		if(x<1)
+			if(x<1)
+				x=2;
+		else
+			x=2;
+		*/
+		//System.out.println(String.valueOf(a*f(1)+a));
+	}
+	public static int f(int x){
+		a = a + 1;
+		return x*a;
+	}
+	public static void swap(ClassA a, ClassA b)
+	{
+		ClassA tmp=b;
+		b=a;
+		a=tmp;
+	}
+}
