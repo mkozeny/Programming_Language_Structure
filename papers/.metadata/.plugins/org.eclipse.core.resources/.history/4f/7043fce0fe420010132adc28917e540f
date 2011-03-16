@@ -69,8 +69,6 @@
 \maketitle
 
 \section{Theory}
-
-
 Before I write a method in Java, which swap two objects, it is necessary
 to introduce some theory around that problem. According to \cite{java:jon}, in
 Java is everything passed by value and objects are never passed at all. Moreover
@@ -93,9 +91,6 @@ demonstrate on the source code shown below.
 %are poped. That is the same if parameter is primitive data type or object. When
 %new local variables inside function are assigned, they are also pushed onto
 %stack.
-
-
-
 This issue is also connected with the fact, that Java Virtual Machine has stack
 based architecture. That means when is some function called, firstly its
 parameters are pushed onto stack. Objects are passed as references to objects
@@ -103,8 +98,6 @@ to function's parameters. If it is inside the scope of the function reassigned
 value of these parameters, this change will not appear in outer scope, because when leaving function the
 stack expires also with parameters.
 \section{Example}
-
-
 When we study methods $swap_{i}()$, where $i \in {1\ldots5}$, we can
 successfully predict, which function will swap two objects and this action
 appears also in main scope. If we look at $swap1()$, we say that reference to

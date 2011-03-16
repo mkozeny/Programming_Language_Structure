@@ -45,6 +45,8 @@
 <part id="8"/>
 <part id="9"/>
 <part id="10"/>
+<part id="11"/>
+<part id="12"/>
 </presentation>
 </folder>
 </info>
@@ -55,11 +57,11 @@
 </editor>
 <editor id="net.sourceforge.texlipse.TexEditor" name="document.tex" partName="document.tex" title="document.tex" tooltip="/media/Windows7_OS/Users/kozenym/Desktop/ČVUT FEL/9. semestr/X32IBU/semestralka/algoritmyProTestovaniPrvociselnosti/document.tex" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/media/Windows7_OS/Users/kozenym/Desktop/ČVUT%20FEL/9.%20semestr/X32IBU/semestralka/algoritmyProTestovaniPrvociselnosti/document.tex"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="38748" selectionTopPixel="15693"/>
+<editorState selectionHorizontalPixel="0" selectionLength="23" selectionOffset="24681" selectionTopPixel="9909"/>
 </editor>
 <editor id="net.sourceforge.texlipse.TexEditor" name="meaning_of_variables.tex" partName="meaning_of_variables.tex" path="/home/kozenym/Desktop/UNO/school/Programming_Language_Structure/git/papers/meaningOfVariables/meaning_of_variables.tex" title="meaning_of_variables.tex" tooltip="meaningOfVariables/meaning_of_variables.tex" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/meaningOfVariables/meaning_of_variables.tex"/>
-<editorState selectionHorizontalPixel="0" selectionLength="46" selectionOffset="2069" selectionTopPixel="1130"/>
+<editorState selectionHorizontalPixel="0" selectionLength="46" selectionOffset="2069" selectionTopPixel="1139"/>
 </editor>
 <editor id="net.sourceforge.texlipse.TexEditor" name="unambiguous_grammar.tex" partName="unambiguous_grammar.tex" path="/home/kozenym/Desktop/UNO/school/Programming_Language_Structure/git/papers/unambiguousGrammar/unambiguous_grammar.tex" title="unambiguous_grammar.tex" tooltip="unambiguousGrammar/unambiguous_grammar.tex" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/unambiguousGrammar/unambiguous_grammar.tex"/>
@@ -91,7 +93,15 @@
 </editor>
 <editor activePart="true" focus="true" id="net.sourceforge.texlipse.TexEditor" name="java_methods_parameter_passing.tex" partName="java_methods_parameter_passing.tex" path="/home/kozenym/Desktop/UNO/school/Programming_Language_Structure/git/papers/javaMethodsParameterPassing/java_methods_parameter_passing.tex" title="java_methods_parameter_passing.tex" tooltip="javaMethodsParameterPassing/java_methods_parameter_passing.tex" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/javaMethodsParameterPassing/java_methods_parameter_passing.tex"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3355" selectionTopPixel="1344"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2028" selectionTopPixel="2433"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" partName="Main.java" path="/home/kozenym/Desktop/UNO/school/Programming_Language_Structure/git/papers/javaMethodsParameterPassing/src/Main.java" title="Main.java" tooltip="javaMethodsParameterPassing/src/Main.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/javaMethodsParameterPassing/src/Main.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="279" selectionTopPixel="580"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestClass.java" partName="TestClass.java" path="/home/kozenym/Desktop/UNO/school/Programming_Language_Structure/git/papers/javaMethodsParameterPassing/src/TestClass.java" title="TestClass.java" tooltip="javaMethodsParameterPassing/src/TestClass.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/javaMethodsParameterPassing/src/TestClass.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="88" selectionTopPixel="138"/>
 </editor>
 </editors>
 <views>
@@ -123,7 +133,7 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.resourceField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Warnings (61 items)"/>
+<category IMemento.internal.id="Warnings (66 items)"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="73" org.eclipse.ui.ide.markerType="337" org.eclipse.ui.ide.pathField="143" org.eclipse.ui.ide.resourceField="108" org.eclipse.ui.ide.severityAndDescriptionField="840"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -340,169 +350,164 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="net.sourceforge.texlipse.TexEditor" path="/unambiguousGrammar/unambiguous_grammar.tex"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="net.sourceforge.texlipse.TexEditor" path="/meaningOfVariables/meaning_of_variables.tex"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="net.sourceforge.texlipse.TexEditor" path="/haskellHwk2/haskell_hwk2.tex"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="net.sourceforge.texlipse.TexEditor" path="/meaningOfVariables/meaning_of_variables.tex"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="net.sourceforge.texlipse.TexEditor" path="/haskellHwk1/haskell_hwk1.tex"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/haskellHwk1/files/Test_script.hs"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="net.sourceforge.texlipse.TexEditor" path="/expressionEvaluation/expression_evaluation.tex"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="net.sourceforge.texlipse.TexEditor" path="/unambiguousGrammar/unambiguous_grammar.tex"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="net.sourceforge.texlipse.TexEditor" path="/haskellHwk1/haskell_hwk1.tex"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="net.sourceforge.texlipse.TexEditor" path="/meaningOfVariables/meaning_of_variables.tex"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/expressionEvaluation/src/Main.java"/>
-<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="net.sourceforge.texlipse.TexEditor" uri="file:/media/Windows7_OS/Users/kozenym/Desktop/ČVUT%20FEL/9.%20semestr/X32IBU/semestralka/algoritmyProTestovaniPrvociselnosti/document.tex"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="net.sourceforge.texlipse.TexEditor" path="/javaMethodsParameterPassing/java_methods_parameter_passing.tex"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/javaMethodsParameterPassing/src/Main.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/javaMethodsParameterPassing/src/TestClass.java"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="net.sourceforge.texlipse.TexEditor" uri="file:/media/Windows7_OS/Users/kozenym/Desktop/ČVUT%20FEL/9.%20semestr/X32IBU/semestralka/algoritmyProTestovaniPrvociselnosti/document.tex"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="net.sourceforge.texlipse.TexEditor" path="/meaningOfVariables/meaning_of_variables.tex"/>
 </editors>
-<item historyLabel="unambiguous_grammar.tex" index="0">
-<position/>
-</item>
-<item historyLabel="meaning_of_variables.tex" index="1">
-<position info="not_deleted" x="8343" y="0"/>
-</item>
-<item historyLabel="unambiguous_grammar.tex" index="0">
-<position info="not_deleted" x="513" y="0"/>
-</item>
-<item historyLabel="haskell_hwk2.tex" index="2">
-<position info="not_deleted" x="0" y="1105"/>
-</item>
-<item historyLabel="meaning_of_variables.tex" index="3">
-<position info="not_deleted" x="0" y="8872"/>
-</item>
-<item historyLabel="haskell_hwk2.tex" index="2">
-<position info="not_deleted" x="0" y="1105"/>
-</item>
-<item historyLabel="haskell_hwk1.tex" index="4">
-<position info="not_deleted" x="7" y="12"/>
-</item>
-<item historyLabel="haskell_hwk2.tex" index="2">
-<position info="not_deleted" x="275" y="0"/>
-</item>
-<item historyLabel="haskell_hwk1.tex" index="4">
-<position info="not_deleted" x="623" y="22"/>
-</item>
-<item historyLabel="haskell_hwk2.tex" index="2">
-<position info="not_deleted" x="768" y="22"/>
-</item>
-<item historyLabel="haskell_hwk1.tex" index="4">
-<position info="not_deleted" x="623" y="22"/>
-</item>
-<item historyLabel="haskell_hwk2.tex" index="2">
-<position info="not_deleted" x="939" y="0"/>
-</item>
-<item historyLabel="haskell_hwk1.tex" index="4">
-<position info="not_deleted" x="712" y="21"/>
-</item>
-<item historyLabel="haskell_hwk2.tex" index="2">
-<position info="not_deleted" x="939" y="0"/>
-</item>
-<item historyLabel="haskell_hwk1.tex" index="4">
-<position info="not_deleted" x="800" y="16"/>
-</item>
-<item historyLabel="haskell_hwk2.tex" index="2">
-<position info="not_deleted" x="939" y="0"/>
-</item>
-<item historyLabel="haskell_hwk1.tex" index="4">
-<position info="not_deleted" x="647" y="54"/>
-</item>
-<item historyLabel="haskell_hwk2.tex" index="2">
-<position info="not_deleted" x="939" y="0"/>
-</item>
-<item historyLabel="Test_script.hs" index="5">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="haskell_hwk2.tex" index="2">
-<position info="not_deleted" x="1083" y="0"/>
-</item>
-<item historyLabel="expression_evaluation.tex" index="6">
-<position info="not_deleted" x="0" y="3683"/>
-</item>
-<item historyLabel="unambiguous_grammar.tex" index="7">
-<position info="not_deleted" x="0" y="4408"/>
-</item>
-<item historyLabel="expression_evaluation.tex" index="6">
-<position info="not_deleted" x="3683" y="0"/>
-</item>
-<item historyLabel="haskell_hwk1.tex" index="8">
-<position info="not_deleted" x="647" y="54"/>
-</item>
-<item historyLabel="meaning_of_variables.tex" index="9">
-<position info="not_deleted" x="294" y="1456"/>
-</item>
-<item historyLabel="expression_evaluation.tex" index="6">
-<position info="not_deleted" x="1830" y="0"/>
-</item>
-<item historyLabel="meaning_of_variables.tex" index="9">
-<position info="not_deleted" x="2069" y="46"/>
-</item>
-<item historyLabel="expression_evaluation.tex" index="6">
-<position info="not_deleted" x="2255" y="0"/>
-</item>
-<item historyLabel="Main.java" index="10">
-<position info="not_deleted" x="84" y="0"/>
-</item>
-<item historyLabel="expression_evaluation.tex" index="6">
-<position info="not_deleted" x="1971" y="0"/>
-</item>
-<item historyLabel="Main.java" index="10">
+<item historyLabel="Main.java" index="2">
 <position info="not_deleted" x="21" y="0"/>
 </item>
-<item historyLabel="expression_evaluation.tex" index="6">
-<position info="not_deleted" x="1971" y="0"/>
-</item>
-<item historyLabel="expression_evaluation.tex" index="6">
-<position/>
-</item>
-<item historyLabel="haskell_hwk2.tex" index="2">
-<position info="not_deleted" x="328" y="32"/>
-</item>
-<item historyLabel="expression_evaluation.tex" index="6">
-<position info="not_deleted" x="517" y="0"/>
-</item>
-<item historyLabel="Main.java" index="10">
-<position info="not_deleted" x="21" y="0"/>
-</item>
-<item historyLabel="expression_evaluation.tex" index="6">
-<position info="not_deleted" x="517" y="0"/>
-</item>
-<item historyLabel="expression_evaluation.tex" index="6">
-<position info="not_deleted" x="3157" y="0"/>
-</item>
-<item historyLabel="Main.java" index="10">
-<position info="not_deleted" x="193" y="0"/>
-</item>
-<item historyLabel="expression_evaluation.tex" index="6">
-<position info="not_deleted" x="3195" y="0"/>
-</item>
-<item historyLabel="expression_evaluation.tex" index="6">
-<position/>
-</item>
-<item historyLabel="document.tex" index="11">
-<position info="not_deleted" x="38748" y="0"/>
-</item>
-<item historyLabel="expression_evaluation.tex" index="6">
-<position info="not_deleted" x="3350" y="0"/>
-</item>
-<item historyLabel="Main.java" index="10">
-<position info="not_deleted" x="21" y="0"/>
-</item>
-<item historyLabel="expression_evaluation.tex" index="6">
+<item historyLabel="expression_evaluation.tex" index="1">
 <position info="not_deleted" x="3276" y="0"/>
 </item>
-<item historyLabel="haskell_hwk2.tex" index="2">
+<item historyLabel="haskell_hwk2.tex" index="0">
 <position info="not_deleted" x="362" y="0"/>
 </item>
-<item historyLabel="expression_evaluation.tex" index="6">
+<item historyLabel="expression_evaluation.tex" index="1">
 <position info="not_deleted" x="3276" y="0"/>
 </item>
-<item historyLabel="java_methods_parameter_passing.tex" index="12">
+<item historyLabel="java_methods_parameter_passing.tex" index="3">
 <position info="not_deleted" x="0" y="3689"/>
 </item>
-<item historyLabel="expression_evaluation.tex" index="6">
+<item historyLabel="expression_evaluation.tex" index="1">
 <position info="not_deleted" x="0" y="3683"/>
 </item>
-<item active="true" historyLabel="java_methods_parameter_passing.tex" index="12">
+<item historyLabel="java_methods_parameter_passing.tex" index="3">
 <position info="not_deleted" x="0" y="3689"/>
+</item>
+<item historyLabel="Main.java" index="4">
+<position info="not_deleted" x="0" y="2410"/>
+</item>
+<item historyLabel="TestClass.java" index="5">
+<position/>
+</item>
+<item historyLabel="java_methods_parameter_passing.tex" index="3">
+<position info="not_deleted" x="5941" y="0"/>
+</item>
+<item historyLabel="Main.java" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="TestClass.java" index="5">
+<position info="not_deleted" x="596" y="0"/>
+</item>
+<item historyLabel="Main.java" index="4">
+<position info="not_deleted" x="2410" y="0"/>
+</item>
+<item historyLabel="TestClass.java" index="5">
+<position info="not_deleted" x="88" y="0"/>
+</item>
+<item historyLabel="java_methods_parameter_passing.tex" index="3">
+<position info="not_deleted" x="5398" y="0"/>
+</item>
+<item historyLabel="java_methods_parameter_passing.tex" index="3">
+<position info="not_deleted" x="2173" y="0"/>
+</item>
+<item historyLabel="java_methods_parameter_passing.tex" index="3">
+<position info="not_deleted" x="3694" y="0"/>
+</item>
+<item historyLabel="document.tex" index="6">
+<position info="not_deleted" x="24681" y="23"/>
+</item>
+<item historyLabel="java_methods_parameter_passing.tex" index="3">
+<position info="not_deleted" x="3663" y="0"/>
+</item>
+<item historyLabel="Main.java" index="4">
+<position info="not_deleted" x="279" y="0"/>
+</item>
+<item historyLabel="java_methods_parameter_passing.tex" index="3">
+<position/>
+</item>
+<item historyLabel="TestClass.java" index="5">
+<position info="not_deleted" x="88" y="0"/>
+</item>
+<item historyLabel="Main.java" index="4">
+<position info="not_deleted" x="279" y="0"/>
+</item>
+<item historyLabel="java_methods_parameter_passing.tex" index="3">
+<position/>
+</item>
+<item historyLabel="meaning_of_variables.tex" index="7">
+<position info="not_deleted" x="2069" y="46"/>
+</item>
+<item historyLabel="Main.java" index="4">
+<position info="not_deleted" x="279" y="0"/>
+</item>
+<item historyLabel="java_methods_parameter_passing.tex" index="3">
+<position/>
+</item>
+<item historyLabel="java_methods_parameter_passing.tex" index="3">
+<position/>
+</item>
+<item historyLabel="Main.java" index="4">
+<position info="not_deleted" x="279" y="0"/>
+</item>
+<item historyLabel="java_methods_parameter_passing.tex" index="3">
+<position/>
+</item>
+<item historyLabel="java_methods_parameter_passing.tex" index="3">
+<position info="not_deleted" x="3911" y="0"/>
+</item>
+<item historyLabel="java_methods_parameter_passing.tex" index="3">
+<position info="not_deleted" x="3963" y="0"/>
+</item>
+<item historyLabel="java_methods_parameter_passing.tex" index="3">
+<position info="not_deleted" x="4018" y="0"/>
+</item>
+<item historyLabel="java_methods_parameter_passing.tex" index="3">
+<position info="not_deleted" x="4076" y="0"/>
+</item>
+<item historyLabel="java_methods_parameter_passing.tex" index="3">
+<position/>
+</item>
+<item historyLabel="Main.java" index="4">
+<position info="not_deleted" x="279" y="0"/>
+</item>
+<item historyLabel="java_methods_parameter_passing.tex" index="3">
+<position/>
+</item>
+<item historyLabel="java_methods_parameter_passing.tex" index="3">
+<position info="not_deleted" x="4249" y="0"/>
+</item>
+<item historyLabel="Main.java" index="4">
+<position info="not_deleted" x="279" y="0"/>
+</item>
+<item historyLabel="java_methods_parameter_passing.tex" index="3">
+<position info="not_deleted" x="4261" y="0"/>
+</item>
+<item historyLabel="Main.java" index="4">
+<position info="not_deleted" x="279" y="0"/>
+</item>
+<item historyLabel="java_methods_parameter_passing.tex" index="3">
+<position/>
+</item>
+<item historyLabel="Main.java" index="4">
+<position info="not_deleted" x="279" y="0"/>
+</item>
+<item historyLabel="java_methods_parameter_passing.tex" index="3">
+<position info="not_deleted" x="4355" y="0"/>
+</item>
+<item historyLabel="Main.java" index="4">
+<position info="not_deleted" x="279" y="0"/>
+</item>
+<item historyLabel="java_methods_parameter_passing.tex" index="3">
+<position/>
+</item>
+<item historyLabel="Main.java" index="4">
+<position info="not_deleted" x="279" y="0"/>
+</item>
+<item historyLabel="java_methods_parameter_passing.tex" index="3">
+<position info="not_deleted" x="4717" y="0"/>
+</item>
+<item historyLabel="Main.java" index="4">
+<position info="not_deleted" x="279" y="0"/>
+</item>
+<item active="true" historyLabel="java_methods_parameter_passing.tex" index="3">
+<position/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -523,6 +528,12 @@
 <mruList>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="java_methods_parameter_passing.pdf" tooltip="javaMethodsParameterPassing/java_methods_parameter_passing.pdf">
 <persistable path="/javaMethodsParameterPassing/java_methods_parameter_passing.pdf"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestClass.java" tooltip="javaMethodsParameterPassing/src/TestClass.java">
+<persistable path="/javaMethodsParameterPassing/src/TestClass.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" tooltip="javaMethodsParameterPassing/src/Main.java">
+<persistable path="/javaMethodsParameterPassing/src/Main.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="net.sourceforge.texlipse.TexEditor" name="java_methods_parameter_passing.tex" tooltip="javaMethodsParameterPassing/java_methods_parameter_passing.tex">
 <persistable path="/javaMethodsParameterPassing/java_methods_parameter_passing.tex"/>
@@ -559,12 +570,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="unambiguous_grammar.pdf" tooltip="unambiguousGrammar/unambiguous_grammar.pdf">
 <persistable path="/unambiguousGrammar/unambiguous_grammar.pdf"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="language_cost.pdf" tooltip="languageCost/language_cost.pdf">
-<persistable path="/languageCost/language_cost.pdf"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="net.sourceforge.texlipse.TexEditor" name="haskell_hwk2.tex" tooltip="haskellHwk2/haskell_hwk2.tex">
-<persistable path="/haskellHwk2/haskell_hwk2.tex"/>
 </file>
 </mruList>
 </workbench>
