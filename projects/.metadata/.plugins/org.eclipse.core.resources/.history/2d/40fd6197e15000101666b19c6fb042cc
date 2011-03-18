@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "headers/set_node.h"
+#include "headers/set.h"
+
+int main()
+{
+	FILE *ifp, *ofp;
+	char *mode = "r";
+	char outputFilename[] = "output.txt";
+
+	ifp = fopen("iput.txt", mode);
+
+	if (ifp == NULL) {
+	  fprintf(stderr, "Can't open input file in.list!\n");
+	  exit(1);
+	}
+
+	ofp = fopen(outputFilename, "w");
+
+	if (ofp == NULL) {
+	  fprintf(stderr, "Can't open output file %s!\n",
+	          outputFilename);
+	  exit(1);
+	}
+
+	fclose(ifp);
+	fclose(ofp);
+	return 0;
+}

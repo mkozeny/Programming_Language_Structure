@@ -1,0 +1,4 @@
+struct Set {
+struct SetNode * first;
+int size;
+}

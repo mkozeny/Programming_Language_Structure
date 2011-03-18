@@ -1,0 +1,4 @@
+struct SetNode {
+char * word;
+struct SetNode * next;
+};

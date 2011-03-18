@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "headers/set_node.h"
+#include "headers/set.h"
+
+int main()
+{
+	
+	
+	return 0;
+}

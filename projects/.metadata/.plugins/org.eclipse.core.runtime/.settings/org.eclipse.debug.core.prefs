@@ -1,3 +1,3 @@
-#Sun Feb 20 12:34:40 CST 2011
-prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<watchExpressions>\n<expression enabled\="true" text\="list[5]"/>\n<expression enabled\="true" text\="sizeof(list)"/>\n<expression enabled\="true" text\="llist-&gt;next-&gt;number"/>\n<expression enabled\="true" text\="llist-&gt;next"/>\n<expression enabled\="true" text\="llist-&gt;next-&gt;next"/>\n<expression enabled\="true" text\="llist-&gt;next-&gt;next-&gt;next"/>\n<expression enabled\="true" text\="llist-&gt;next-&gt;next-&gt;next-&gt;next"/>\n<expression enabled\="true" text\="llist-&gt;next-&gt;next-&gt;next-&gt;next-&gt;number"/>\n</watchExpressions>\n
+#Thu Mar 17 17:30:02 CDT 2011
+prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<watchExpressions>\n<expression enabled\="true" text\="item -&gt; word"/>\n<expression enabled\="true" text\="set -&gt; size"/>\n<expression enabled\="true" text\="set -&gt; first -&gt; word"/>\n</watchExpressions>\n
 eclipse.preferences.version=1
