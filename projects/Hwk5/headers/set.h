@@ -12,3 +12,4 @@ void add( struct Set * set, char * word);
 int isMember(struct Set * set, char * word);
 void printSet(struct Set * set);
 void writeSetToFile(struct Set * set, FILE * file);
+void deallocateSet(struct Set *set);
