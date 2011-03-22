@@ -1,0 +1,136 @@
+\title{Binding exercises} \author{
+        Martin Kozeny\\
+        CSCI 4501: Programming Language Structure\\
+        Spring 2011
+        University of New Orleans
+}
+\date{\today}
+
+
+
+
+\documentclass[5pt]{article}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{qtree}
+\usepackage{multicol}
+%\usepackage{chemarrow}
+\usepackage[utf8]{inputenc}
+
+
+\setlength{\hoffset}{-2.3cm} 
+\setlength{\voffset}{-3cm}
+\setlength{\textheight}{24.0cm} 
+\setlength{\textwidth}{16cm}
+
+
+\begin{document}
+
+
+\maketitle
+
+\setcounter{section}{2}
+\section{Names, Scopes, and Bindings exercises}
+
+Plain text.
+\newcommand{\Subsection}[1]{\Subsection{#1} \setcounter{figure}{3}}
+
+ 
+
+\subsection{}
+
+\paragraph{Question}
+
+Indicate the binding time (e.g., when the language is designed, when the
+program is linked, when the program begins execution, etc.) for each of the
+following decisions in your favorite programming language and implementation.
+Explain any answers you think are open to interpretation
+
+\begin{itemize}
+\item The number of built-in functions (math, type queries, etc.)
+\item The variable declaration that corresponds to a particular variable reference (use)
+\item The maximum length allowed for a constant (literal) character string
+\item The referencing environment for a subroutine that is passed as a parameter
+\item The address of a particular library routine
+\item The total amount of space occupied by program code and data
+
+\end{itemize}
+
+\paragraph{Answer}
+\setcounter{subsection}{2}
+\subsection{}
+
+\paragraph{Question}
+Give two examples in which it might make sense to delay the binding of an
+implementation decision, even though sufficient information exists to bind
+it early.
+
+
+\paragraph{Answer}
+
+\subsection{}
+
+\paragraph{Question}
+Give three concrete examples drawn from programming languages with
+which you are familiar in which a variable is live but not in scope.
+
+
+\paragraph{Answer}
+\begin{enumerate}
+  \item C: global variable x is still live but not in the scope if a local variable
+x is declared in the scope and here appears so called hole in the scope.
+  \item C: when we declared static variable inside function, it is not in scope
+  outside function, but is still alive.
+  \item Java: private member variables of an object of Java class are live but
+not in scope when execution is not inside a member function of Java.
+\end{enumerate}
+\subsection{}
+
+\paragraph{Question}
+Consider the following pseudocode, assuming nested subroutines and static
+scope.
+
+\begin{description}
+\item[(a)] What does this program print?
+\item[(b)] Show the frames on the stack when \textit{A} has just been called.
+For each frame, show the static and dynamic links.
+\item[(c)] Explain how \textit{A} finds \textit{g}.
+\end{description}
+
+\paragraph{Answer}
+\setcounter{subsection}{13}
+\subsection{}
+
+\paragraph{Question}
+Consider the following pseudocode.
+\newline
+\begin{verbatim}
+x : integer –– global
+
+procedure set x(n : integer)
+   x := n
+   
+procedure print x
+   write integer(x)
+   
+procedure first
+   set x(1)
+   print x
+   
+procedure second
+   x : integer
+   set x(2)
+   print x
+
+set x(0)
+first()
+print x
+second()
+print x
+\end{verbatim}
+What does this program print if the language uses static scoping? What does
+it print with dynamic scoping? Why?
+
+\paragraph{Answer}
+\end{document}

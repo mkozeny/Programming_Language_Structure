@@ -1,0 +1,181 @@
+\title{Names, Scopes, and Bindings exercises} \author{
+        Martin Kozeny\\
+        CSCI 4501: Programming Language Structure\\
+        Spring 2011
+        University of New Orleans
+}
+\date{\today}
+
+
+
+
+\documentclass[5pt]{article}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{qtree}
+\usepackage{multicol}
+%\usepackage{chemarrow}
+\usepackage[utf8]{inputenc}
+
+
+\setlength{\hoffset}{-2.3cm} 
+\setlength{\voffset}{-3cm}
+\setlength{\textheight}{24.0cm} 
+\setlength{\textwidth}{16cm}
+
+
+\begin{document}
+
+
+\maketitle
+
+\setcounter{section}{2}
+\section{Names, Scopes, and Bindings exercises}
+
+
+\newcommand{\Subsection}[1]{\Subsection{#1} \setcounter{figure}{3}}
+
+ 
+
+\subsection{}
+
+\paragraph{Question}
+
+Indicate the binding time (e.g., when the language is designed, when the
+program is linked, when the program begins execution, etc.) for each of the
+following decisions in your favorite programming language and implementation.
+Explain any answers you think are open to interpretation
+
+\begin{itemize}
+\item The number of built-in functions (math, type queries, etc.)
+\item The variable declaration that corresponds to a particular variable reference (use)
+\item The maximum length allowed for a constant (literal) character string
+\item The referencing environment for a subroutine that is passed as a parameter
+\item The address of a particular library routine
+\item The total amount of space occupied by program code and data
+
+\end{itemize}
+
+\paragraph{Answer}
+\setcounter{subsection}{2}
+\subsection{}
+
+\paragraph{Question}
+Give two examples in which it might make sense to delay the binding of an
+implementation decision, even though sufficient information exists to bind
+it early.
+
+
+\paragraph{Answer}
+
+\subsection{}
+
+\paragraph{Question}
+Give three concrete examples drawn from programming languages with
+which you are familiar in which a variable is live but not in scope.
+
+
+\paragraph{Answer}
+\begin{enumerate}
+  \item C: global variable \verb|x| is still live but not in the scope if a
+  local variable \verb|x| is declared in the scope and here appears so called
+  hole in the scope.
+  \item C: when we declared static variable inside function, it is not in scope
+  outside function, but is still alive.
+  \item Java: private member variables of an object of Java class are live but
+not in scope when execution is not inside a member function of Java.
+\end{enumerate}
+\subsection{}
+
+\paragraph{Question}
+Consider the following pseudocode, assuming nested subroutines and static
+scope.
+
+\begin{description}
+\item[(a)] What does this program print?
+\item[(b)] Show the frames on the stack when \textit{A} has just been called.
+For each frame, show the static and dynamic links.
+\item[(c)] Explain how \textit{A} finds \textit{g}.
+\end{description}
+
+\paragraph{Answer}
+Firstly in C after invocation of \verb|main()| are declared and initialized
+variables \verb|a| and \verb|b|. Then procedure \verb|middle()| is declared and
+immediately called. Inside procedure \verb|middle()| there is declared variable
+\verb|b| again, procedure \verb|inner()| and variable \verb|a| also again in
+that order. After that procedure \verb|inner()| is invoked and inside it is
+\verb|a| and \verb|b| printed. We know that C uses static scoping and that
+declaration must be before use. That means that name \verb|b| in procedure
+\verb|inner()| is bound to declaration in procedure \verb|middle()| and name
+\verb|a| is bound to declaration in \verb|main()|, because \verb|a| in closest
+enclosing block (procedure \verb|middle()|) is declared after declaration od
+\verb|inner()|. So firstly 1, 1 are printed.
+
+
+
+After that in procedure \verb|middle()| are bound names of \verb|a| and \verb|b|
+to declaration in this procedure so 3, 1 is printed.
+
+When printing \verb|a| and \verb|b| in \verb|main()|, also here is declaration
+in this procedure is used so 1, 2 is printed
+
+
+In C\# we can declare nested functions only using keyword \verb|delegate|, but
+in this nested function is not possible to declare variable with same name as in
+enclosing function.
+\setcounter{subsection}{13}
+\subsection{}
+
+\paragraph{Question}
+Consider the following pseudocode.
+\newline
+\begin{verbatim}
+x : integer -- global
+
+procedure set_x(n : integer)
+   x := n
+   
+procedure print_x
+   write integer(x)
+   
+procedure first
+   set_x(1)
+   print_x
+   
+procedure second
+   x : integer
+   set_x(2)
+   print_x
+
+set_x(0)
+first()
+print_x
+second()
+print_x
+\end{verbatim}
+What does this program print if the language uses static scoping? What does
+it print with dynamic scoping? Why?
+
+\paragraph{Answer}
+In static scoping is variable bound to the closest enclosing block, so in
+procedure \verb|print_x| is variable \verb|x| always bound to global
+declaration, so the output will be:\\
+\\
+1\\
+1\\
+2\\
+2\\
+
+In dynamic scoping choose the most recent active binding for \verb|x| at
+run-time. When calling procedure \verb|second()| and then call inside
+\verb|print_x|, variable \verb|x| is bound to
+declaration in procedure \verb|second()| and then printed as 2, but when calling
+\verb|print_x| outside scope of \verb|second()|, \verb|x| is bound to global
+declaration and \verb|print_x| prints 1. So the output will be:\\
+\\
+1\\
+1\\
+2\\
+1\\
+\end{document}

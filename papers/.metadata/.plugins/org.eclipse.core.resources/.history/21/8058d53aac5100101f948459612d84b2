@@ -1,0 +1,81 @@
+\title{Binding exercises} \author{
+        Martin Kozeny\\
+        CSCI 4501: Programming Language Structure\\
+        Spring 2011
+        University of New Orleans
+}
+\date{\today}
+
+
+
+
+\documentclass[5pt]{article}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{qtree}
+\usepackage{multicol}
+%\usepackage{chemarrow}
+\usepackage[utf8]{inputenc}
+
+
+\setlength{\hoffset}{-2.3cm} 
+\setlength{\voffset}{-3cm}
+\setlength{\textheight}{24.0cm} 
+\setlength{\textwidth}{16cm}
+
+
+\begin{document}
+
+
+\maketitle
+
+\section{Binding exercises}
+
+Plain text.
+
+\subsection{3.1}
+
+\paragraph{Question}
+
+Indicate the binding time (e.g., when the language is designed, when the
+program is linked, when the program begins execution, etc.) for each of the
+following decisions in your favorite programming language and implemen-
+tation. Explain any answers you think are open to interpretation
+
+\begin{itemize}
+\item The number of built-in functions (math, type queries, etc.)
+\item The variable declaration that corresponds to a particular variable reference (use)
+\item The maximum length allowed for a constant (literal) character string
+\item The referencing environment for a subroutine that is passed as a parameter
+\item The address of a particular library routine
+\item The total amount of space occupied by program code and data
+
+\end{itemize}
+
+\paragraph{Answer}
+
+\subsection{3.3}
+
+\paragraph{Question}
+
+\paragraph{Answer}
+
+\subsection{3.4}
+
+\paragraph{Question}
+
+\paragraph{Answer}
+
+\subsection{3.5}
+
+\paragraph{Question}
+
+\paragraph{Answer}
+
+\subsection{3.14}
+
+\paragraph{Question}
+
+\paragraph{Answer}
+\end{document}
