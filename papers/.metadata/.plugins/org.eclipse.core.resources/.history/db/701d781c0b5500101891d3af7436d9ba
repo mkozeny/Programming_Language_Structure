@@ -1,0 +1,105 @@
+\title{Haskell Hwk3} \author{
+        Martin Kozeny\\
+        CSCI 4501: Programming Language Structure\\
+        Spring 2011
+        University of New Orleans
+}
+\date{\today}
+
+
+
+
+\documentclass[5pt]{article}
+\usepackage{graphicx}
+\usepackage{listings}
+  \usepackage{courier}
+ 
+ \lstset{
+language=C,
+basicstyle=\small\sffamily,
+numbers=left,
+numberstyle=\tiny,
+%frame=tb,
+columns=fullflexible,
+showstringspaces=false
+}
+
+ \lstloadlanguages{% Check Dokumentation for further languages ...
+         %[Visual]Basic
+         %Pascal
+         C
+         %C++
+         %XML
+         %HTML
+         %Lisp
+         %Java
+ }
+
+
+\setlength{\hoffset}{-2.3cm} 
+\setlength{\voffset}{-3cm}
+\setlength{\textheight}{24.0cm} 
+\setlength{\textwidth}{16cm}
+
+
+\begin{document}
+
+
+\maketitle
+
+\section{Haskell code}
+\lstinputlisting[language=Haskell]{src/Hwk3.hs}
+
+\section{Test scripts}
+In some tests were used more spaces between tokens for really extreme testing,
+but these are not shown in this paper. Input files with more spaces are
+submitted to BlackBoard.
+\subsection{Test1}
+\subsubsection{Input}
+\lstinputlisting{src/input/emailDirectory1.txt}
+
+\subsubsection{Output}
+\lstinputlisting[language=html]{src/output/emailDirectory1.html}
+
+\subsection{Test2}
+\subsubsection{Input}
+\lstinputlisting{src/input/emailDirectory2.txt}
+
+\subsubsection{Output}
+\lstinputlisting[language=html]{src/output/emailDirectory2.html}
+
+\subsection{Test3}
+\subsubsection{Input}
+\lstinputlisting{src/input/emailDirectory3.txt}
+
+\subsubsection{Output}
+\lstinputlisting[language=html]{src/output/emailDirectory3.html}
+
+\subsection{Test4}
+\subsubsection{Input}
+\lstinputlisting{src/input/emailDirectory4.txt}
+
+\subsection{Output}
+\lstinputlisting[language=html]{src/output/emailDirectory4.html}
+
+\subsection{Test5}
+\subsubsection{Input}
+\lstinputlisting{src/input/emailDirectory5.txt}
+
+\subsubsection{Output}
+\lstinputlisting[language=html]{src/output/emailDirectory5.html}
+
+\subsection{Test6}
+\subsubsection{Input}
+\lstinputlisting{src/input/emailDirectory6.txt}
+\newpage
+\subsubsection{Output}
+\lstinputlisting[language=html]{src/output/emailDirectory6.html}
+
+\subsection{Test7}
+\subsubsection{Input}
+\lstinputlisting{src/input/emailDirectory7.txt}
+
+\subsubsection{Output}
+\lstinputlisting[language=html]{src/output/emailDirectory7.html}
+\end{document}

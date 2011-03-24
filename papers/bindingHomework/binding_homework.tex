@@ -55,9 +55,30 @@ Explain any answers you think are open to interpretation
 \item The address of a particular library routine
 \item The total amount of space occupied by program code and data
 
+
 \end{itemize}
 
 \paragraph{Answer}
+The number of built-in functions is originally bound at language design time, though it may
+be increased by certain implementations. C has just a few functions that are truly built-in,
+notably sizeof. A large number of additional functions are defined by the standard library.
+Several of these, including printf, malloc, assert, and the various stdarg routines, are
+often special-cased by the compiler in order to generate faster or safer code.
+The variable declaration that corresponds to a particular variable reference (use) is bound at
+compile time: C uses static scope.
+The maximum length of a character string (if there is a limit) is bound at language implementation
+time.
+Because C does not have nested subroutines, the referencing environment for a subroutine that
+is passed as a parameter is always the same as the environment in effect when the subroutine
+was declared.
+The address of a particular library function is bound by the linker in most systems, though it
+may not be known until load time or even run time in systems that perform dynamic linking.
+Note that we’re speaking here of virtual addresses; physical addresses
+are invisible to the running program, and are often changed by the operating system during
+execution).
+The total amount of space occupied by program code and data is bound at run time: the
+amount of stack and heap space needed will often depend on the input.
+
 \setcounter{subsection}{2}
 \subsection{}
 
@@ -95,15 +116,41 @@ not in scope when execution is not inside a member function of Java.
 \subsection{}
 
 \paragraph{Question}
-Consider the following pseudocode, assuming nested subroutines and static
-scope.
+Consider the following pseudocode.
 
-\begin{description}
-\item[(a)] What does this program print?
-\item[(b)] Show the frames on the stack when \textit{A} has just been called.
-For each frame, show the static and dynamic links.
-\item[(c)] Explain how \textit{A} finds \textit{g}.
-\end{description}
+\begin{verbatim}
+procedure main
+  a : integer := 1
+  b : integer := 2
+  
+  procedure middle
+    b : integer := a
+    
+    procedure inner
+      print a, b
+      
+    a : integer := 3
+    
+    --body of middle
+    inner()
+    print a, b
+    
+  --body of main
+  middle()
+  print a, b
+\end{verbatim}
+
+
+Suppose this was code for a language with declaration-order rules of C (but
+with nested subroutines)-that is, names must be declared before use, and the
+scope of a name extends from its declaration through the end of the block. At
+each \verb|print| statement, indicate which declarations of \verb|a| and
+\verb|b| are in the referencing environment. What does the program print (or
+will the compiler identify static semantic errors)? Repeat the excercise for the
+declaration-order rules for C\# (names must be declared before use, but the
+scope if a name is the entire block in which it is declared) and Modula-3
+(names can be declared in any order, and their scope is the entire block in
+which they are declared).
 
 \paragraph{Answer}
 Firstly in C after invocation of \verb|main()| are declared and initialized
@@ -130,12 +177,25 @@ in this procedure is used so 1, 2 is printed
 In C\# we can declare nested functions only using keyword \verb|delegate|, but
 in this nested function is not possible to declare variable with same name as in
 enclosing function.
+
+In Modula-3 is situation much more complicated. When calling procedure
+\verb|inner()|, there is a conflict with assignment of \verb|b|, because in
+procedure \verb|middle()| is initialized with value of \verb|a|, but \verb|a|
+has value from closest enclosing block and also from declaration in procedure
+\verb|middle()|, because names can be declared in any order. So the final value
+of \verb|b| in procedure \verb|middle()| is 0 because of this conflict. Then
+variable \verb|a| is in \verb|middle()| initialized on 3, which shadows
+declaration in \verb|main|, so then in procedure \verb|inner()| 3 is printed as
+\verb|a| and 0 as \verb|b|, because of conflict in closest enclosing block
+\verb|middle()|. Same it is in procedure \verb|middle()|, \verb|a| is printed as
+3, \verb|b| as 0 and in procedure \verb|main()| have \verb|a| and \verb|b|
+values from local initialization, so \verb|a|=1 and \verb|b|=2.
 \setcounter{subsection}{13}
 \subsection{}
 
 \paragraph{Question}
 Consider the following pseudocode.
-\newline
+
 \begin{verbatim}
 x : integer -- global
 
@@ -172,7 +232,6 @@ declaration, so the output will be:\\
 1\\
 2\\
 2\\
-
 In dynamic scoping choose the most recent active binding for \verb|x| at
 run-time. When calling procedure \verb|second()| and then call inside
 \verb|print_x|, variable \verb|x| is bound to

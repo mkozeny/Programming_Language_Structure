@@ -22,6 +22,7 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="172" y="34"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" itemType="typePlaceholder" x="44" y="34"/>
 <coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="net.sourceforge.texlipse.TexEditor" itemType="typeToolBarContribution" x="188" y="34"/>
@@ -36,77 +37,17 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
-<part id="2"/>
-<part id="3"/>
-<part id="4"/>
-<part id="5"/>
-<part id="6"/>
-<part id="7"/>
-<part id="8"/>
-<part id="9"/>
-<part id="10"/>
-<part id="11"/>
-<part id="12"/>
-<part id="13"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="net.sourceforge.texlipse.TexEditor" name="haskell_hwk1.tex" partName="haskell_hwk1.tex" path="/home/kozenym/Desktop/UNO/school/Programming_Language_Structure/git/papers/haskellHwk1/haskell_hwk1.tex" title="haskell_hwk1.tex" tooltip="haskellHwk1/haskell_hwk1.tex" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/haskellHwk1/haskell_hwk1.tex"/>
-<editorState selectionHorizontalPixel="0" selectionLength="54" selectionOffset="647" selectionTopPixel="612"/>
+<editor activePart="true" focus="true" id="net.sourceforge.texlipse.TexEditor" name="haskell_hwk3.tex" partName="haskell_hwk3.tex" path="/home/kozenym/Desktop/UNO/school/Programming_Language_Structure/git/papers/haskellHwk3/haskell_hwk3.tex" title="haskell_hwk3.tex" tooltip="haskellHwk3/haskell_hwk3.tex" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/haskellHwk3/haskell_hwk3.tex"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2002" selectionTopPixel="1091"/>
 </editor>
-<editor id="net.sourceforge.texlipse.TexEditor" name="document.tex" partName="document.tex" title="document.tex" tooltip="/media/Windows7_OS/Users/kozenym/Desktop/ČVUT FEL/9. semestr/X32IBU/semestralka/algoritmyProTestovaniPrvociselnosti/document.tex" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/media/Windows7_OS/Users/kozenym/Desktop/ČVUT%20FEL/9.%20semestr/X32IBU/semestralka/algoritmyProTestovaniPrvociselnosti/document.tex"/>
-<editorState selectionHorizontalPixel="0" selectionLength="23" selectionOffset="24681" selectionTopPixel="9909"/>
-</editor>
-<editor id="net.sourceforge.texlipse.TexEditor" name="meaning_of_variables.tex" partName="meaning_of_variables.tex" path="/home/kozenym/Desktop/UNO/school/Programming_Language_Structure/git/papers/meaningOfVariables/meaning_of_variables.tex" title="meaning_of_variables.tex" tooltip="meaningOfVariables/meaning_of_variables.tex" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/meaningOfVariables/meaning_of_variables.tex"/>
-<editorState selectionHorizontalPixel="0" selectionLength="46" selectionOffset="2069" selectionTopPixel="1139"/>
-</editor>
-<editor id="net.sourceforge.texlipse.TexEditor" name="unambiguous_grammar.tex" partName="unambiguous_grammar.tex" path="/home/kozenym/Desktop/UNO/school/Programming_Language_Structure/git/papers/unambiguousGrammar/unambiguous_grammar.tex" title="unambiguous_grammar.tex" tooltip="unambiguousGrammar/unambiguous_grammar.tex" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/unambiguousGrammar/unambiguous_grammar.tex"/>
-<editorState selectionHorizontalPixel="0" selectionLength="554" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="net.sourceforge.texlipse.TexEditor" name="document.tex" partName="document.tex" title="document.tex" tooltip="/media/Windows7_OS/Users/kozenym/Desktop/ČVUT FEL/8. semestr/X33UIP/semestralka/research/document.tex" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/media/Windows7_OS/Users/kozenym/Desktop/ČVUT%20FEL/8.%20semestr/X33UIP/semestralka/research/document.tex"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="38986" selectionTopPixel="14707"/>
-</editor>
-<editor id="net.sourceforge.texlipse.TexEditor" name="document.tex" partName="document.tex" title="document.tex" tooltip="/media/Windows7_OS/Users/kozenym/Desktop/ČVUT FEL/9. semestr/X36NAN/report_2/semestralka/document.tex" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/media/Windows7_OS/Users/kozenym/Desktop/ČVUT%20FEL/9.%20semestr/X36NAN/report_2/semestralka/document.tex"/>
-<editorState selectionHorizontalPixel="0" selectionLength="79" selectionOffset="5791" selectionTopPixel="2393"/>
-</editor>
-<editor id="net.sourceforge.texlipse.TexEditor" name="document.tex" partName="document.tex" title="document.tex" tooltip="/media/Windows7_OS/Users/kozenym/Desktop/ČVUT FEL/8. semestr/X36SSP/semestralka/1. prezentace/prezentace/document.tex" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/media/Windows7_OS/Users/kozenym/Desktop/ČVUT%20FEL/8.%20semestr/X36SSP/semestralka/1.%20prezentace/prezentace/document.tex"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="7522" selectionTopPixel="4333"/>
-</editor>
-<editor id="net.sourceforge.texlipse.TexEditor" name="haskell_hwk2.tex" partName="haskell_hwk2.tex" path="/home/kozenym/Desktop/UNO/school/Programming_Language_Structure/git/papers/haskellHwk2/haskell_hwk2.tex" title="haskell_hwk2.tex" tooltip="haskellHwk2/haskell_hwk2.tex" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/haskellHwk2/haskell_hwk2.tex"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="362" selectionTopPixel="580"/>
-</editor>
-<editor id="net.sourceforge.texlipse.TexEditor" name="expression_evaluation.tex" partName="expression_evaluation.tex" path="/home/kozenym/Desktop/UNO/school/Programming_Language_Structure/git/papers/expressionEvaluation/expression_evaluation.tex" title="expression_evaluation.tex" tooltip="expressionEvaluation/expression_evaluation.tex" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/expressionEvaluation/expression_evaluation.tex"/>
-<editorState selectionHorizontalPixel="0" selectionLength="3683" selectionOffset="0" selectionTopPixel="1224"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" partName="Main.java" path="/home/kozenym/Desktop/UNO/school/Programming_Language_Structure/git/papers/expressionEvaluation/src/Main.java" title="Main.java" tooltip="expressionEvaluation/src/Main.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/expressionEvaluation/src/Main.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="21" selectionTopPixel="0"/>
-</editor>
-<editor id="net.sourceforge.texlipse.TexEditor" name="java_methods_parameter_passing.tex" partName="java_methods_parameter_passing.tex" path="/home/kozenym/Desktop/UNO/school/Programming_Language_Structure/git/papers/javaMethodsParameterPassing/java_methods_parameter_passing.tex" title="java_methods_parameter_passing.tex" tooltip="javaMethodsParameterPassing/java_methods_parameter_passing.tex" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/javaMethodsParameterPassing/java_methods_parameter_passing.tex"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2028" selectionTopPixel="2448"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" partName="Main.java" path="/home/kozenym/Desktop/UNO/school/Programming_Language_Structure/git/papers/javaMethodsParameterPassing/src/Main.java" title="Main.java" tooltip="javaMethodsParameterPassing/src/Main.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/javaMethodsParameterPassing/src/Main.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="279" selectionTopPixel="580"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestClass.java" partName="TestClass.java" path="/home/kozenym/Desktop/UNO/school/Programming_Language_Structure/git/papers/javaMethodsParameterPassing/src/TestClass.java" title="TestClass.java" tooltip="javaMethodsParameterPassing/src/TestClass.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/javaMethodsParameterPassing/src/TestClass.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="88" selectionTopPixel="138"/>
-</editor>
-<editor activePart="true" focus="true" id="net.sourceforge.texlipse.TexEditor" name="binding_homework.tex" partName="binding_homework.tex" path="/home/kozenym/Desktop/UNO/school/Programming_Language_Structure/git/papers/bindingHomework/binding_homework.tex" title="binding_homework.tex" tooltip="bindingHomework/binding_homework.tex" workbook="DefaultEditorWorkbook">
+<editor id="net.sourceforge.texlipse.TexEditor" name="binding_homework.tex" partName="binding_homework.tex" path="/home/kozenym/Desktop/UNO/school/Programming_Language_Structure/git/papers/bindingHomework/binding_homework.tex" title="binding_homework.tex" tooltip="bindingHomework/binding_homework.tex" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/bindingHomework/binding_homework.tex"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2125" selectionTopPixel="806"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5284" selectionTopPixel="578"/>
 </editor>
 </editors>
 <views>
@@ -138,7 +79,7 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.resourceField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Warnings (81 items)"/>
+<category IMemento.internal.id="Warnings (87 items)"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="73" org.eclipse.ui.ide.markerType="337" org.eclipse.ui.ide.pathField="143" org.eclipse.ui.ide.resourceField="108" org.eclipse.ui.ide.severityAndDescriptionField="840"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -357,69 +298,20 @@
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="net.sourceforge.texlipse.TexEditor" path="/javaMethodsParameterPassing/java_methods_parameter_passing.tex"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/javaMethodsParameterPassing/src/Main.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/javaMethodsParameterPassing/src/TestClass.java"/>
-<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="net.sourceforge.texlipse.TexEditor" uri="file:/media/Windows7_OS/Users/kozenym/Desktop/ČVUT%20FEL/9.%20semestr/X32IBU/semestralka/algoritmyProTestovaniPrvociselnosti/document.tex"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="net.sourceforge.texlipse.TexEditor" path="/meaningOfVariables/meaning_of_variables.tex"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="net.sourceforge.texlipse.TexEditor" path="/bindingHomework/binding_homework.tex"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="net.sourceforge.texlipse.TexEditor" path="/unambiguousGrammar/unambiguous_grammar.tex"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="net.sourceforge.texlipse.TexEditor" path="/haskellHwk3/haskell_hwk3.tex"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="net.sourceforge.texlipse.TexEditor" path="/haskellHwk2/haskell_hwk2.tex"/>
+<editor factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" path="/haskellHwk3/src/output/emailDirectory1.html"/>
+<editor factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" path="/haskellHwk3/src/output/emailDirectory2.html"/>
+<editor factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" path="/haskellHwk3/src/output/emailDirectory3.html"/>
+<editor factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" path="/haskellHwk3/src/output/emailDirectory4.html"/>
+<editor factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" path="/haskellHwk3/src/output/emailDirectory5.html"/>
+<editor factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" path="/haskellHwk3/src/output/emailDirectory6.html"/>
+<editor factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" path="/haskellHwk3/src/output/emailDirectory7.html"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="net.sourceforge.texlipse.TexEditor" path="/bindingHomework/binding_homework.tex"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="net.sourceforge.texlipse.TexEditor" path="/haskellHwk3/haskell_hwk3.tex"/>
 </editors>
-<item historyLabel="Main.java" index="1">
-<position info="not_deleted" x="0" y="2410"/>
-</item>
-<item historyLabel="TestClass.java" index="2">
-<position/>
-</item>
-<item historyLabel="java_methods_parameter_passing.tex" index="0">
-<position info="not_deleted" x="5941" y="0"/>
-</item>
-<item historyLabel="Main.java" index="1">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="TestClass.java" index="2">
-<position info="not_deleted" x="596" y="0"/>
-</item>
-<item historyLabel="Main.java" index="1">
-<position info="not_deleted" x="2410" y="0"/>
-</item>
-<item historyLabel="TestClass.java" index="2">
-<position info="not_deleted" x="88" y="0"/>
-</item>
-<item historyLabel="java_methods_parameter_passing.tex" index="0">
-<position info="not_deleted" x="5398" y="0"/>
-</item>
-<item historyLabel="java_methods_parameter_passing.tex" index="0">
-<position info="not_deleted" x="2173" y="0"/>
-</item>
-<item historyLabel="java_methods_parameter_passing.tex" index="0">
-<position info="not_deleted" x="3694" y="0"/>
-</item>
-<item historyLabel="document.tex" index="3">
-<position info="not_deleted" x="24681" y="23"/>
-</item>
-<item historyLabel="java_methods_parameter_passing.tex" index="0">
-<position info="not_deleted" x="3663" y="0"/>
-</item>
-<item historyLabel="Main.java" index="1">
-<position info="not_deleted" x="279" y="0"/>
-</item>
-<item historyLabel="java_methods_parameter_passing.tex" index="0">
-<position/>
-</item>
-<item historyLabel="TestClass.java" index="2">
-<position info="not_deleted" x="88" y="0"/>
-</item>
-<item historyLabel="Main.java" index="1">
-<position info="not_deleted" x="279" y="0"/>
-</item>
-<item historyLabel="java_methods_parameter_passing.tex" index="0">
-<position/>
-</item>
-<item historyLabel="meaning_of_variables.tex" index="4">
-<position info="not_deleted" x="2069" y="46"/>
-</item>
-<item historyLabel="Main.java" index="1">
-<position info="not_deleted" x="279" y="0"/>
-</item>
 <item historyLabel="java_methods_parameter_passing.tex" index="0">
 <position/>
 </item>
@@ -492,26 +384,83 @@
 <item historyLabel="java_methods_parameter_passing.tex" index="0">
 <position/>
 </item>
-<item historyLabel="binding_homework.tex" index="5">
+<item historyLabel="binding_homework.tex" index="2">
 <position info="not_deleted" x="0" y="596"/>
 </item>
-<item historyLabel="unambiguous_grammar.tex" index="6">
+<item historyLabel="unambiguous_grammar.tex" index="3">
 <position info="not_deleted" x="0" y="554"/>
 </item>
-<item historyLabel="binding_homework.tex" index="5">
+<item historyLabel="binding_homework.tex" index="2">
 <position info="not_deleted" x="0" y="596"/>
 </item>
-<item historyLabel="binding_homework.tex" index="5">
+<item historyLabel="binding_homework.tex" index="2">
 <position info="not_deleted" x="716" y="0"/>
 </item>
-<item historyLabel="binding_homework.tex" index="5">
+<item historyLabel="binding_homework.tex" index="2">
 <position info="not_deleted" x="2708" y="0"/>
 </item>
-<item historyLabel="binding_homework.tex" index="5">
+<item historyLabel="binding_homework.tex" index="2">
 <position info="not_deleted" x="3378" y="0"/>
 </item>
-<item active="true" historyLabel="binding_homework.tex" index="5">
-<position info="not_deleted" x="3540" y="0"/>
+<item historyLabel="binding_homework.tex" index="2">
+<position info="not_deleted" x="2125" y="0"/>
+</item>
+<item historyLabel="haskell_hwk3.tex" index="4">
+<position info="not_deleted" x="0" y="2137"/>
+</item>
+<item historyLabel="haskell_hwk2.tex" index="5">
+<position info="not_deleted" x="0" y="1106"/>
+</item>
+<item historyLabel="haskell_hwk3.tex" index="4">
+<position info="not_deleted" x="884" y="158"/>
+</item>
+<item historyLabel="emailDirectory1.html" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="emailDirectory2.html" index="7">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="emailDirectory3.html" index="8">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="emailDirectory4.html" index="9">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="emailDirectory5.html" index="10">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="emailDirectory6.html" index="11">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="emailDirectory7.html" index="12">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="haskell_hwk3.tex" index="4">
+<position info="not_deleted" x="1854" y="0"/>
+</item>
+<item historyLabel="emailDirectory7.html" index="12">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="emailDirectory6.html" index="11">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="emailDirectory5.html" index="10">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="emailDirectory4.html" index="9">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="emailDirectory7.html" index="12">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="haskell_hwk3.tex" index="4">
+<position info="not_deleted" x="1854" y="0"/>
+</item>
+<item historyLabel="binding_homework.tex" index="13">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item active="true" historyLabel="haskell_hwk3.tex" index="14">
+<position info="not_deleted" x="2092" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -530,11 +479,41 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="haskell_hwk3.pdf" tooltip="haskellHwk3/haskell_hwk3.pdf">
+<persistable path="/haskellHwk3/haskell_hwk3.pdf"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="binding_homework.pdf" tooltip="bindingHomework/binding_homework.pdf">
 <persistable path="/bindingHomework/binding_homework.pdf"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="net.sourceforge.texlipse.TexEditor" name="binding_homework.tex" tooltip="bindingHomework/binding_homework.tex">
 <persistable path="/bindingHomework/binding_homework.tex"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="emailDirectory7.html" tooltip="haskellHwk3/src/output/emailDirectory7.html">
+<persistable path="/haskellHwk3/src/output/emailDirectory7.html"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="emailDirectory6.html" tooltip="haskellHwk3/src/output/emailDirectory6.html">
+<persistable path="/haskellHwk3/src/output/emailDirectory6.html"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="emailDirectory5.html" tooltip="haskellHwk3/src/output/emailDirectory5.html">
+<persistable path="/haskellHwk3/src/output/emailDirectory5.html"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="emailDirectory4.html" tooltip="haskellHwk3/src/output/emailDirectory4.html">
+<persistable path="/haskellHwk3/src/output/emailDirectory4.html"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="emailDirectory3.html" tooltip="haskellHwk3/src/output/emailDirectory3.html">
+<persistable path="/haskellHwk3/src/output/emailDirectory3.html"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="emailDirectory2.html" tooltip="haskellHwk3/src/output/emailDirectory2.html">
+<persistable path="/haskellHwk3/src/output/emailDirectory2.html"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.jboss.tools.jst.jsp.jspeditor.HTMLTextEditor" name="emailDirectory1.html" tooltip="haskellHwk3/src/output/emailDirectory1.html">
+<persistable path="/haskellHwk3/src/output/emailDirectory1.html"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="Hwk3.hs" tooltip="haskellHwk3/src/Hwk3.hs">
+<persistable path="/haskellHwk3/src/Hwk3.hs"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="net.sourceforge.texlipse.TexEditor" name="haskell_hwk3.tex" tooltip="haskellHwk3/haskell_hwk3.tex">
+<persistable path="/haskellHwk3/haskell_hwk3.tex"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="java_methods_parameter_passing.pdf" tooltip="javaMethodsParameterPassing/java_methods_parameter_passing.pdf">
 <persistable path="/javaMethodsParameterPassing/java_methods_parameter_passing.pdf"/>
@@ -544,36 +523,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" tooltip="javaMethodsParameterPassing/src/Main.java">
 <persistable path="/javaMethodsParameterPassing/src/Main.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="net.sourceforge.texlipse.TexEditor" name="java_methods_parameter_passing.tex" tooltip="javaMethodsParameterPassing/java_methods_parameter_passing.tex">
-<persistable path="/javaMethodsParameterPassing/java_methods_parameter_passing.tex"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="expression_evaluation.pdf" tooltip="expressionEvaluation/expression_evaluation.pdf">
-<persistable path="/expressionEvaluation/expression_evaluation.pdf"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="haskell_hwk2.pdf" tooltip="haskellHwk2/haskell_hwk2.pdf">
-<persistable path="/haskellHwk2/haskell_hwk2.pdf"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="functions.c" tooltip="expressionEvaluation/src/functions.c">
-<persistable path="/expressionEvaluation/src/functions.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" tooltip="expressionEvaluation/src/Main.java">
-<persistable path="/expressionEvaluation/src/Main.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="net.sourceforge.texlipse.TexEditor" name="expression_evaluation.tex" tooltip="expressionEvaluation/expression_evaluation.tex">
-<persistable path="/expressionEvaluation/expression_evaluation.tex"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="functions.c" tooltip="haskellHwk2/src/functions.c">
-<persistable path="/haskellHwk2/src/functions.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="tuple.c" tooltip="haskellHwk2/src/tuple.c">
-<persistable path="/haskellHwk2/src/tuple.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="node.c" tooltip="haskellHwk2/src/node.c">
-<persistable path="/haskellHwk2/src/node.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="Hwk2_test_script.hs" tooltip="haskellHwk2/src/Hwk2_test_script.hs">
-<persistable path="/haskellHwk2/src/Hwk2_test_script.hs"/>
 </file>
 </mruList>
 </workbench>

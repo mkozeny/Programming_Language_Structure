@@ -1,0 +1,13 @@
+#TeXlipse project settings
+#Tue Mar 22 00:44:48 CDT 2011
+builderNum=2
+outputDir=
+makeIndSty=
+bibrefDir=
+outputFormat=pdf
+tempDir=tmp
+mainTexFile=haskell_hwk3.tex
+outputFile=haskell_hwk3.pdf
+langSpell=en
+markDer=true
+srcDir=
