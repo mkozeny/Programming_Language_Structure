@@ -1,0 +1,16 @@
+insertionSort: sortFun 
+	"Sort self according to 'sortFun'"
+	| el j |
+	self
+		doWithIndex: [:elem :index | 
+			el := self at: index.
+			j := index - 1.
+			[j >= 1
+				and: [(sortFun
+						value: (self at: j)
+						value: el) not]]
+				whileTrue: [self
+						at: j + 1
+						put: (self at: j).
+					j := j - 1].
+			self at: j + 1 put: el]

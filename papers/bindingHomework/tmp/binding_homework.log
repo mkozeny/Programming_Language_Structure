@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.2.20)  23 MAR 2011 00:40
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.2.20)  28 MAR 2011 11:26
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -565,26 +565,36 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 51.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
-Underfull \hbox (badness 10000) in paragraph at lines 227--246
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
+Underfull \hbox (badness 10000) in paragraph at lines 245--258
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--246
+Underfull \hbox (badness 10000) in paragraph at lines 245--258
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--246
+Underfull \hbox (badness 10000) in paragraph at lines 245--258
 
  []
 
-[3] (./binding_homework.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 258--270
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 258--270
+
+ []
+
+[4] (./binding_homework.aux) ) 
 Here is how much of TeX's memory you used:
  2425 strings out of 493930
  28536 string characters out of 1154817
- 92341 words of memory out of 3000000
+ 91341 words of memory out of 3000000
  5670 multiletter control sequences out of 15000+50000
  9972 words of font info for 38 fonts, out of 3000000 for 9000
  669 hyphenation exceptions out of 8191
@@ -596,9 +606,9 @@ r/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texm
 f-texlive/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-texlive/fo
 nts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/p
 ublic/amsfonts/cm/cmtt10.pfb>
-Output written on binding_homework.pdf (3 pages, 102406 bytes).
+Output written on binding_homework.pdf (4 pages, 105157 bytes).
 PDF statistics:
- 40 PDF objects out of 1000 (max. 8388607)
+ 43 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

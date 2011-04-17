@@ -1,0 +1,63 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "headers/set_node.h"
+#include "headers/set.h"
+
+void test(char inputFilename, char outputFilename)
+{
+	FILE *ifp, *ofp;
+	char *mode = "r";
+	char *input;
+	char *token;
+
+	ifp = fopen(inputFilename, mode);
+
+	if (ifp == NULL) {
+	  fprintf(stderr, "Can't open input file %s!\n", inputFilename);
+	  exit(1);
+	}
+
+	ofp = fopen(outputFilename, "w");
+
+	if (ofp == NULL) {
+	  fprintf(stderr, "Can't open output file %s!\n",
+	          outputFilename);
+	  exit(1);
+	}
+	
+	/*allocating Set structure*/
+	struct Set *set = (struct Set *)malloc(sizeof(struct Set));
+	printf("Input file:\n");
+	/*reading from file token by token and put it to variable input*/
+	while (fscanf(ifp, "%s", input) != EOF) {
+		/*allocating of string*/
+		token = malloc(strlen(input)*sizeof(char));
+		/*cloning string because of putting it to the set structure*/
+		strcpy(token, input);
+		/*adding string to set*/
+		add(set, token);
+		printf("%s\n", input);
+	}
+	printf("\nOutput file:\n");
+	printSet(set);
+	writeSetToFile(set,ofp);
+	
+	/*closes the input file associated with the stream and disassociates it*/
+	fclose(ifp);
+	/*closes the output file associated with the stream and disassociates it*/
+	fclose(ofp);
+	/*deallocating of variable token*/
+	free(token);
+	/*deallocating of variable set*/
+	deallocateSet(set);
+}
+
+int main()
+{
+	char inputFilename[] = "input.txt";
+	char outputFilename[] = "output.txt";
+	test("input.txt", "output.txt");
+	return 0;
+}
+

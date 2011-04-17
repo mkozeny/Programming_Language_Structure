@@ -1,0 +1,271 @@
+\title{Names, Scopes, and Bindings exercises} \author{
+        Martin Kozeny\\
+        CSCI 4501: Programming Language Structure\\
+        Spring 2011
+        University of New Orleans
+}
+\date{\today}
+
+
+
+
+\documentclass[5pt]{article}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{qtree}
+\usepackage{multicol}
+%\usepackage{chemarrow}
+\usepackage[utf8]{inputenc}
+
+
+\setlength{\hoffset}{-2.3cm} 
+\setlength{\voffset}{-3cm}
+\setlength{\textheight}{24.0cm} 
+\setlength{\textwidth}{16cm}
+
+
+\begin{document}
+
+
+\maketitle
+
+\setcounter{section}{2}
+\section{Names, Scopes, and Bindings exercises}
+
+
+\newcommand{\Subsection}[1]{\Subsection{#1} \setcounter{figure}{3}}
+
+ 
+
+\subsection{}
+
+\paragraph{Question}
+
+Indicate the binding time (e.g., when the language is designed, when the
+program is linked, when the program begins execution, etc.) for each of the
+following decisions in your favorite programming language and implementation.
+Explain any answers you think are open to interpretation
+
+\begin{itemize}
+\item The number of built-in functions (math, type queries, etc.)
+\item The variable declaration that corresponds to a particular variable reference (use)
+\item The maximum length allowed for a constant (literal) character string
+\item The referencing environment for a subroutine that is passed as a parameter
+\item The address of a particular library routine
+\item The total amount of space occupied by program code and data
+
+
+\end{itemize}
+
+\paragraph{Answers for programming language C}
+\begin{itemize}
+\item The number of built-in functions is originally bound at language design
+time, though it may be increased by certain implementations. C has just a few functions that are truly built-in,
+notably \verb|sizeof|. A large number of additional functions are defined by the
+standard library. Several of these, including \verb|printf|, \verb|malloc|,
+\verb|assert|, and the various \verb|stdarg| routines, are often special-cased
+by the compiler in order to generate faster or safer code. 
+
+\item The variable declaration that corresponds to a particular variable
+reference (use) is bound at compile time: C uses static scope and no
+decisions about scoping are made during run-time.
+
+\item The maximum length of a character string (if there is a limit) is bound at
+language implementation time.
+
+\item Because C does not have nested subroutines, the referencing environment
+for a subroutine that is passed as a parameter is always the same as the environment in effect when the subroutine
+was declared.
+\item The address of a particular library function is bound by the linker in
+most systems, though it may not be known until load time or even run time in systems that perform dynamic linking.
+Note that we are speaking here of virtual addresses; physical addresses
+are invisible to the running program, and are often changed by the operating system during
+execution.
+\item The total amount of space occupied by program code and data is bound at
+run time: the amount of stack and heap space needed will often depend on the input and the
+static memory allocated by the globals and static area of the program is
+allocated, when the program starts.
+\end{itemize}
+
+
+\setcounter{subsection}{2}
+\subsection{}
+
+\paragraph{Question}
+Give two examples in which it might make sense to delay the binding of an
+implementation decision, even though sufficient information exists to bind
+it early.
+
+
+\paragraph{Answer}
+\begin{enumerate}
+\item It makes sense for local variables in Fortran to allocate them on stack
+instead of in static memory. It can minimizes size of used memory and allow
+recursion.
+
+\item Just-in-time compilation allows a system to minimize code size, obtain the
+most recent implementations of standard abstractions, and avoid the overhead of compiling functions that
+aren’t used.
+\end{enumerate}
+\subsection{}
+
+\paragraph{Question}
+Give three concrete examples drawn from programming languages with
+which you are familiar in which a variable is live but not in scope.
+
+
+\paragraph{Answer}
+\begin{enumerate}
+  \item C: global variable \verb|x| is still live but not in the scope if a
+  local variable \verb|x| is declared in the scope and here appears so called
+  hole in the scope.
+  \item C: when we declared static variable inside function, it is not in scope
+  outside function, but is still alive.
+  \item Java: private member variables of an object of Java class are live but
+not in scope when execution is not inside a member function of Java.
+\end{enumerate}
+\subsection{}
+
+\paragraph{Question}
+Consider the following pseudocode.
+
+\begin{verbatim}
+procedure main
+  a : integer := 1
+  b : integer := 2
+  
+  procedure middle
+    b : integer := a
+    
+    procedure inner
+      print a, b
+      
+    a : integer := 3
+    
+    --body of middle
+    inner()
+    print a, b
+    
+  --body of main
+  middle()
+  print a, b
+\end{verbatim}
+
+
+Suppose this was code for a language with declaration-order rules of C (but
+with nested subroutines)-that is, names must be declared before use, and the
+scope of a name extends from its declaration through the end of the block. At
+each \verb|print| statement, indicate which declarations of \verb|a| and
+\verb|b| are in the referencing environment. What does the program print (or
+will the compiler identify static semantic errors)? Repeat the excercise for the
+declaration-order rules for C\# (names must be declared before use, but the
+scope if a name is the entire block in which it is declared) and Modula-3
+(names can be declared in any order, and their scope is the entire block in
+which they are declared).
+
+\paragraph{Answer}
+\begin{itemize}
+\item Firstly in C after invocation of \verb|main()| are declared and
+initialized variables \verb|a| and \verb|b|. Then procedure \verb|middle()| is declared and
+immediately called. Inside procedure \verb|middle()| there is declared variable
+\verb|b| again, procedure \verb|inner()| and variable \verb|a| also again in
+that order. After that procedure \verb|inner()| is invoked and inside it is
+\verb|a| and \verb|b| printed. We know that C uses static scoping and that
+declaration must be before use. That means that name \verb|b| in procedure
+\verb|inner()| is bound to declaration in procedure \verb|middle()| and name
+\verb|a| is bound to declaration in \verb|main()|, because \verb|a| in closest
+enclosing block (procedure \verb|middle()|) is declared after declaration of
+\verb|inner()|. So firstly \verb|1|, \verb|1| is printed.
+
+
+
+After that in procedure \verb|middle()| are bound names of \verb|a| and \verb|b|
+to declaration in this procedure. When declared \verb|b : integer := a|,
+\verb|a| is bound to the declaration in \verb|main()| and then \verb|a| is
+declared again and initialized with \verb|3|. So \verb|3|, \verb|1| is printed.
+
+When printing \verb|a| and \verb|b| in \verb|main()|, also here is declaration
+in this procedure is used so \verb|1|, \verb|2| is printed
+
+
+\item In C\# we can declare nested functions only using keyword \verb|delegate|,
+but in this nested function is not possible to declare variable with same name as in
+any-level enclosing function so static semantic error occur.
+
+\item In Modula-3 is situation much more complicated. When calling procedure
+\verb|inner()|, there is a conflict with assignment of \verb|b|, because in
+procedure \verb|middle()| is initialized with value of \verb|a|, but \verb|a|
+has value from closest enclosing block and also from declaration in procedure
+\verb|middle()|, because names can be declared in any order. So the final value
+of \verb|b| in procedure \verb|middle()| is \verb|0| because of this conflict.
+Then variable \verb|a| is in \verb|middle()| initialized on \verb|3|, which
+shadows declaration in \verb|main|, so then in procedure \verb|inner()| \verb|3|
+is printed as \verb|a| and \verb|0| as \verb|b|, because of conflict in closest
+enclosing block \verb|middle()|. Same it is in procedure \verb|middle()|, \verb|a| is printed as
+\verb|3|, \verb|b| as \verb|0| and in procedure \verb|main()| have \verb|a| and
+\verb|b| values from local initialization, so \verb|a=1| and \verb|b=2|.
+\end{itemize}
+
+\setcounter{subsection}{13}
+\subsection{}
+
+\paragraph{Question}
+Consider the following pseudocode.
+
+\begin{verbatim}
+x : integer -- global
+
+procedure set_x(n : integer)
+   x := n
+   
+procedure print_x
+   write integer(x)
+   
+procedure first
+   set_x(1)
+   print_x
+   
+procedure second
+   x : integer
+   set_x(2)
+   print_x
+
+set_x(0)
+first()
+print_x
+second()
+print_x
+\end{verbatim}
+What does this program print if the language uses static scoping? What does
+it print with dynamic scoping? Why?
+\newpage
+\paragraph{Answer}
+\begin{itemize}
+\item In static scoping is variable bound to the closest enclosing block, so in
+procedure \verb|print_x| is variable \verb|x| always bound to global
+declaration. Firstly is that global \verb|x| set to zero, then when calling
+\verb|first()| is set to \verb|1| and then printed as \verb|1| and also as
+\verb|1| in \verb|main()| scope. After that in procedure \verb|second()| is
+\verb|x| set to \verb|2| and again printed as \verb|2| and also as
+\verb|2| in \verb|main()| scope. So the output will be:\\
+\\
+1\\
+1\\
+2\\
+2\\
+\\
+\item In dynamic scoping is chosen the most recent active binding for \verb|x|
+at run-time. Firstly the global variable \verb|x| is set to
+zero, then when invoking \verb|first()| is set to \verb|1| and then printed as
+\verb|1| and also as \verb|1| in \verb|main()| scope. But when calling procedure \verb|second()| and
+then call inside \verb|print_x|, variable \verb|x| is bound to declaration in
+procedure \verb|second()| and then printed as \verb|2|. When calling
+\verb|print_x| outside scope of \verb|second()|, \verb|x| is bound to global declaration and \verb|print_x| prints \verb|1|. So the output will be:\\
+\\
+1\\
+1\\
+2\\
+1\\
+\end{itemize}
+\end{document}

@@ -1,3 +1,3 @@
-#Thu Mar 17 17:30:02 CDT 2011
-prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<watchExpressions>\n<expression enabled\="true" text\="item -&gt; word"/>\n<expression enabled\="true" text\="set -&gt; size"/>\n<expression enabled\="true" text\="set -&gt; first -&gt; word"/>\n</watchExpressions>\n
+#Sun Mar 27 13:18:11 CDT 2011
+prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<watchExpressions>\n<expression enabled\="true" text\="set -&gt; first-&gt;word"/>\n<expression enabled\="true" text\="item-&gt;word"/>\n<expression enabled\="true" text\="token"/>\n</watchExpressions>\n
 eclipse.preferences.version=1

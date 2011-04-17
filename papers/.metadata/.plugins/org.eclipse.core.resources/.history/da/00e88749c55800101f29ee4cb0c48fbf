@@ -1,0 +1,75 @@
+\title{C homework} \author{
+        Martin Kozeny\\
+        CSCI 4501: Programming Language Structure\\
+        Spring 2011
+        University of New Orleans
+}
+\date{\today}
+
+
+
+
+\documentclass[5pt]{article}
+\usepackage{graphicx}
+\usepackage{listings}
+  \usepackage{courier}
+  \usepackage{alltt}
+  
+ 
+ \lstset{
+language=C,
+basicstyle=\small\sffamily,
+numbers=left,
+numberstyle=\tiny,
+%frame=tb,
+columns=fullflexible,
+showstringspaces=false
+}
+
+ \lstloadlanguages{% Check Dokumentation for further languages ...
+         %[Visual]Basic
+         %Pascal
+         C
+         %C++
+         %XML
+         %HTML
+         %Lisp
+         %Java
+ }
+
+
+\setlength{\hoffset}{-2.3cm} 
+\setlength{\voffset}{-3cm}
+\setlength{\textheight}{24.0cm} 
+\setlength{\textwidth}{16cm}
+
+
+\begin{document}
+
+
+\maketitle
+
+\section{C code}
+
+\subsection{Main file}
+Different words in the output are written in reverse order because of
+'stack like' implementation of \verb|Set| structure.
+\lstinputlisting[language=C]{src/different_words.c}
+
+\subsection{Set file}
+Implementation of \verb|Set| structure.
+\lstinputlisting[language=C]{src/set.c}
+\newpage
+\section{Testing}
+In provided test is shown, that the implementation is case sensitive - e.g.
+distiction between 'Hi' and 'hi'.
+\subsection{Input}
+\begin{alltt}
+\input{src/input.txt}
+\end{alltt}
+\subsection{Output}
+\begin{alltt}
+\input{src/output.txt}
+\end{alltt}
+
+\end{document}

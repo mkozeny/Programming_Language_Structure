@@ -1,0 +1,64 @@
+\title{Language Study, Part I} \author{
+        Martin Kozeny\\
+        CSCI 4501: Programming Language Structure\\
+        Spring 2011
+        University of New Orleans
+}
+\date{\today}
+
+
+
+
+\documentclass[5pt]{article}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{qtree}
+\usepackage{multicol}
+%\usepackage{chemarrow}
+\usepackage[utf8]{inputenc}
+
+
+\setlength{\hoffset}{-2.3cm} 
+\setlength{\voffset}{-3cm}
+\setlength{\textheight}{24.0cm} 
+\setlength{\textwidth}{16cm}
+
+
+\begin{document}
+
+\maketitle
+
+\setcounter{section}{-1}
+\begin{enumerate}
+  \item
+  \begin{description}
+  \item[a]
+  \item[b]
+  \item[c]
+  \item[d]
+  \item[e]
+  \item[f]
+  \item[g]
+  \end{description}
+  \item
+  \begin{description}
+  \item[a]
+  \item[b]
+  \end{description}
+  \item
+  \begin{description}
+  \item[a]
+  \item[b]
+  \end{description}
+  \item Give 3 example programs:\\
+For the programs you are asked below, avoid writing one page type programs that fail to show the power of the language.
+  \begin{description}
+  \item[a]
+  \item[b]
+  \item[c]
+  \end{description}
+\end{enumerate}
+
+
+\end{document}

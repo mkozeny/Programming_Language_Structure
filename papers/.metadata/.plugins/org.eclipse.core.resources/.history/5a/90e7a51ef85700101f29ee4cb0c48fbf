@@ -1,0 +1,17 @@
+insertionSort: sortFun 
+	"Sort self according to 'sortFun'"
+	| el j |																																									!local variables - actual element and actual index!
+	self																																												!reference to array itself!
+		doWithIndex: [:elem :index |		!indexing array! 
+			el := self at: index.			!variable el is initialized to first element of array!
+			j := index - 1.								!variable j is initialized to the end of sorted array, at the beginning to 0!
+			[j >= 1
+				and: [(sortFun
+						value: (self at: j)
+						value: el) not]]		!while j index is not lower than 1!
+				whileTrue: [self																								!and actual element of sorted!
+						at: j + 1										!array is not lower than element to be put into array,!
+						put: (self at: j).	! actual element is shifted right and j index is decreased!
+					j := j - 1].
+			self at: j + 1 put: el]			!after putting element to appropriate place,!
+											! to el is put next element behind actually sorted array!

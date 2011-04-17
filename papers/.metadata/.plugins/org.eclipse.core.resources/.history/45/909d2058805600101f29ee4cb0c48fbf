@@ -1,0 +1,118 @@
+\title{Language Study, Part I} \author{
+        Martin Kozeny\\
+        CSCI 4501: Programming Language Structure\\
+        Spring 2011
+        University of New Orleans
+}
+\date{\today}
+
+
+
+
+\documentclass[5pt]{article}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{qtree}
+\usepackage{multicol}
+%\usepackage{chemarrow}
+\usepackage[utf8]{inputenc}
+
+
+\setlength{\hoffset}{-2.3cm} 
+\setlength{\voffset}{-3cm}
+\setlength{\textheight}{24.0cm} 
+\setlength{\textwidth}{16cm}
+
+
+\begin{document}
+
+\maketitle
+
+
+\begin{enumerate}
+  \item
+  \begin{description}
+  \item[a]Date of \textbf{first} release of the language.\\
+  \\
+  According to \cite{krasner:bits_of_history}, Smalltalk-80 system has its roots in the Xerox Palo Alto Research
+Center starting more than 10 years ago. Because of publishing book in 1982,
+first release of Smalltalk is in 1972 (Smalltalk-72). Some others sources
+pointed to year 1971.
+  \item[b]Name of designer or designers.\\
+  \\
+  As presented in \cite{wiki:smalltalk}, designers of language are Alan Kay, Dan
+  Ingalls, Adele Goldberg, Ted Kaehler, Scott Wallace.
+  \item[c]Is the actual language version you are using the original version? an extension of it? a subset of it? neither an
+extension nor a subset but a version based on the original language? Explain
+your answer.\\
+\\
+According to \cite{black:squeak_by_example} Squeak is a modern,
+open source, fully-featured implementation of the Smalltalk programming language and environment so its version based on on the
+original language.
+  \item[d]If not the original version, state the date of the release of the version you are using, as well as the date of the
+release of the translator (compiler, interpreter) you are using to write programs.
+  \item[e]Do the language have an standard? if so, state release date, and state
+  whether the translator you are using implements the standard.\\
+  \\
+  According to \cite{web:squeak}, the ANSI Smalltalk standard was approved on
+  May 19, 1998. The official name of the document is ANSI INCITS 319-1998 (R2002). The Squeak
+  Virtual Machine of Squeak broadly follows the specification of chapter 27 of
+  the \cite{goldberg:blue_book}, but there is nothing said about ANSI Smalltalk
+  standard.
+  \item[f]If the language does not have a standard,
+  \begin{description}
+  \item[i]list the documents you are using for the release you are using.
+  \item[ii]how do all the 3 different main language users (language designers,
+  language implementors, and programmers) deal with the understanding of the language features and their semantics without a standard?
+  \end{description}
+  \item[g]What programming paradigms does the language support? How well does it
+  support each paradigm? Clearly support your answers with language features.\\
+  \\
+  Smalltalk supports only object-oriented paradigm according to
+  \cite{goldberg:blue_book}(page 12).
+  \end{description}
+  \item
+  \begin{description}
+  \item[a]Describe the component(s) for the formation of an executable program, i.e. what do you need to write a complete
+program that can be executed?
+  \item[b]What language constructs are used for the formation of library units?
+  \end{description}
+  \item
+  \begin{description}
+  \item[a]Evaluate the language in terms of \textit{readability, writeability and
+  reliability}.
+  \item[b]Is it an all-purpose language (sufficiently general)? Support your answer with the existence or lack of language constructs.
+  \end{description}
+  \item Give 3 example programs:\\
+For the programs you are asked below, avoid writing one page type programs that fail to show the power of the language.
+  \begin{description}
+  \item[a]One that you can steal, but can also read, understand and explain. Produce an example of its execution (give its
+input and output.). State clearly the input used in the execution and the output produced.
+  \item[b]Write one that is 'representative' of the language application area.
+  Make it a meaningful program.
+  \item[c]To be announced shortly.
+  \end{description}
+\end{enumerate}
+
+\begin{thebibliography}{1}
+
+\bibitem{krasner:bits_of_history}
+Glenn Krasner; \textit{Smalltalk-
+80, Bits of History, Words of Advice}, 1982.
+
+\bibitem{black:squeak_by_example}Andrew P. Black, Stéphane Ducasse,
+Oscar Nierstrasz, Damien Pollet; \textit{Squeak by example}, 2009.
+
+\bibitem{goldberg:blue_book}Adele Goldberg, David Robson; \textit{Blue Book},
+1983.
+
+\bibitem{web:squeak}Squeak website,
+\verb|http://www.squeak.org|.
+
+\bibitem{wiki:smalltalk}Wikipedia, The Free Encyclopedia,
+\verb|http://en.wikipedia.org/wiki/Smalltalk|.
+
+\end{thebibliography}
+
+\end{document}

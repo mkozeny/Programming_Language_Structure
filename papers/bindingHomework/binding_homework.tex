@@ -58,26 +58,36 @@ Explain any answers you think are open to interpretation
 
 \end{itemize}
 
-\paragraph{Answer}
-The number of built-in functions is originally bound at language design time, though it may
-be increased by certain implementations. C has just a few functions that are truly built-in,
-notably sizeof. A large number of additional functions are defined by the standard library.
-Several of these, including printf, malloc, assert, and the various stdarg routines, are
-often special-cased by the compiler in order to generate faster or safer code.
-The variable declaration that corresponds to a particular variable reference (use) is bound at
-compile time: C uses static scope.
-The maximum length of a character string (if there is a limit) is bound at language implementation
-time.
-Because C does not have nested subroutines, the referencing environment for a subroutine that
-is passed as a parameter is always the same as the environment in effect when the subroutine
+\paragraph{Answers for programming language C}
+\begin{itemize}
+\item The number of built-in functions is originally bound at language design
+time, though it may be increased by certain implementations. C has just a few functions that are truly built-in,
+notably \verb|sizeof|. A large number of additional functions are defined by the
+standard library. Several of these, including \verb|printf|, \verb|malloc|,
+\verb|assert|, and the various \verb|stdarg| routines, are often special-cased
+by the compiler in order to generate faster or safer code. 
+
+\item The variable declaration that corresponds to a particular variable
+reference (use) is bound at compile time: C uses static scope and no
+decisions about scoping are made during run-time.
+
+\item The maximum length of a character string (if there is a limit) is bound at
+language implementation time.
+
+\item Because C does not have nested subroutines, the referencing environment
+for a subroutine that is passed as a parameter is always the same as the environment in effect when the subroutine
 was declared.
-The address of a particular library function is bound by the linker in most systems, though it
-may not be known until load time or even run time in systems that perform dynamic linking.
-Note that we’re speaking here of virtual addresses; physical addresses
+\item The address of a particular library function is bound by the linker in
+most systems, though it may not be known until load time or even run time in systems that perform dynamic linking.
+Note that we are speaking here of virtual addresses; physical addresses
 are invisible to the running program, and are often changed by the operating system during
-execution).
-The total amount of space occupied by program code and data is bound at run time: the
-amount of stack and heap space needed will often depend on the input.
+execution.
+\item The total amount of space occupied by program code and data is bound at
+run time: the amount of stack and heap space needed will often depend on the input and the
+static memory allocated by the globals and static area of the program is
+allocated, when the program starts.
+\end{itemize}
+
 
 \setcounter{subsection}{2}
 \subsection{}
@@ -89,13 +99,15 @@ it early.
 
 
 \paragraph{Answer}
-Local variables in Fortran 77 may be allocated on the stack, rather than in static memory, in
-order to minimize memory footprint and to facilitate interoperability with standard tools (e.g.,
-debuggers).
+\begin{enumerate}
+\item It makes sense for local variables in Fortran 77 to allocate them on stack
+instead of in static memory. It can minimizes size of used memory and it allows
+to implement recursion.
 
-Just-in-time compilation allows a system to minimize code size, obtain the most recent implementations
-of standard abstractions, and avoid the overhead of compiling functions that
+\item Just-in-time compilation allows a system to minimize code size, obtain the
+most recent implementations of standard abstractions, and avoid the overhead of compiling functions that
 aren’t used.
+\end{enumerate}
 \subsection{}
 
 \paragraph{Question}
@@ -153,8 +165,9 @@ scope if a name is the entire block in which it is declared) and Modula-3
 which they are declared).
 
 \paragraph{Answer}
-Firstly in C after invocation of \verb|main()| are declared and initialized
-variables \verb|a| and \verb|b|. Then procedure \verb|middle()| is declared and
+\begin{itemize}
+\item Firstly in C after invocation of \verb|main()| are declared and
+initialized variables \verb|a| and \verb|b|. Then procedure \verb|middle()| is declared and
 immediately called. Inside procedure \verb|middle()| there is declared variable
 \verb|b| again, procedure \verb|inner()| and variable \verb|a| also again in
 that order. After that procedure \verb|inner()| is invoked and inside it is
@@ -162,34 +175,38 @@ that order. After that procedure \verb|inner()| is invoked and inside it is
 declaration must be before use. That means that name \verb|b| in procedure
 \verb|inner()| is bound to declaration in procedure \verb|middle()| and name
 \verb|a| is bound to declaration in \verb|main()|, because \verb|a| in closest
-enclosing block (procedure \verb|middle()|) is declared after declaration od
-\verb|inner()|. So firstly 1, 1 are printed.
+enclosing block (procedure \verb|middle()|) is declared after declaration of
+\verb|inner()|. So firstly \verb|1|, \verb|1| is printed.
 
 
 
 After that in procedure \verb|middle()| are bound names of \verb|a| and \verb|b|
-to declaration in this procedure so 3, 1 is printed.
+to declaration in this procedure. When declared \verb|b : integer := a|,
+\verb|a| is bound to the declaration in \verb|main()| and then \verb|a| is
+declared again and initialized with \verb|3|. So \verb|3|, \verb|1| is printed.
 
 When printing \verb|a| and \verb|b| in \verb|main()|, also here is declaration
-in this procedure is used so 1, 2 is printed
+in this procedure is used so \verb|1|, \verb|2| is printed
 
 
-In C\# we can declare nested functions only using keyword \verb|delegate|, but
-in this nested function is not possible to declare variable with same name as in
-enclosing function.
+\item In C\# we can declare nested functions only using keyword \verb|delegate|,
+but in this nested function is not possible to declare variable with same name as in
+any-level enclosing function so static semantic error occur.
 
-In Modula-3 is situation much more complicated. When calling procedure
+\item In Modula-3 is situation much more complicated. When calling procedure
 \verb|inner()|, there is a conflict with assignment of \verb|b|, because in
 procedure \verb|middle()| is initialized with value of \verb|a|, but \verb|a|
 has value from closest enclosing block and also from declaration in procedure
 \verb|middle()|, because names can be declared in any order. So the final value
-of \verb|b| in procedure \verb|middle()| is 0 because of this conflict. Then
-variable \verb|a| is in \verb|middle()| initialized on 3, which shadows
-declaration in \verb|main|, so then in procedure \verb|inner()| 3 is printed as
-\verb|a| and 0 as \verb|b|, because of conflict in closest enclosing block
-\verb|middle()|. Same it is in procedure \verb|middle()|, \verb|a| is printed as
-3, \verb|b| as 0 and in procedure \verb|main()| have \verb|a| and \verb|b|
-values from local initialization, so \verb|a|=1 and \verb|b|=2.
+of \verb|b| in procedure \verb|middle()| is \verb|0| because of this conflict.
+Then variable \verb|a| is in \verb|middle()| initialized on \verb|3|, which
+shadows declaration in \verb|main|, so then in procedure \verb|inner()| \verb|3|
+is printed as \verb|a| and \verb|0| as \verb|b|, because of conflict in closest
+enclosing block \verb|middle()|. Same it is in procedure \verb|middle()|, \verb|a| is printed as
+\verb|3|, \verb|b| as \verb|0| and in procedure \verb|main()| have \verb|a| and
+\verb|b| values from local initialization, so \verb|a=1| and \verb|b=2|.
+\end{itemize}
+
 \setcounter{subsection}{13}
 \subsection{}
 
@@ -222,25 +239,33 @@ print_x
 \end{verbatim}
 What does this program print if the language uses static scoping? What does
 it print with dynamic scoping? Why?
-
+\newpage
 \paragraph{Answer}
-In static scoping is variable bound to the closest enclosing block, so in
+\begin{itemize}
+\item In static scoping is variable bound to the closest enclosing block, so in
 procedure \verb|print_x| is variable \verb|x| always bound to global
-declaration, so the output will be:\\
+declaration. Firstly is that global \verb|x| set to zero, then when calling
+\verb|first()| is set to \verb|1| and then printed as \verb|1| and also as
+\verb|1| in \verb|main()| scope. After that in procedure \verb|second()| is
+\verb|x| set to \verb|2| and again printed as \verb|2| and also as
+\verb|2| in \verb|main()| scope. So the output will be:\\
 \\
 1\\
 1\\
 2\\
 2\\
-In dynamic scoping choose the most recent active binding for \verb|x| at
-run-time. When calling procedure \verb|second()| and then call inside
-\verb|print_x|, variable \verb|x| is bound to
-declaration in procedure \verb|second()| and then printed as 2, but when calling
-\verb|print_x| outside scope of \verb|second()|, \verb|x| is bound to global
-declaration and \verb|print_x| prints 1. So the output will be:\\
+\\
+\item In dynamic scoping is chosen the most recent active binding for \verb|x|
+at run-time. Firstly the global variable \verb|x| is set to
+zero, then when invoking \verb|first()| is set to \verb|1| and then printed as
+\verb|1| and also as \verb|1| in \verb|main()| scope. But when calling procedure \verb|second()| and
+then call inside \verb|print_x|, variable \verb|x| is bound to declaration in
+procedure \verb|second()| and then printed as \verb|2|. When calling
+\verb|print_x| outside scope of \verb|second()|, \verb|x| is bound to global declaration and \verb|print_x| prints \verb|1|. So the output will be:\\
 \\
 1\\
 1\\
 2\\
 1\\
+\end{itemize}
 \end{document}
